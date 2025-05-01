@@ -1,4 +1,4 @@
-Collecting workspace information# Projeto CineBangue
+# Projeto CineBangue
 
 O projeto CineBangue é um sistema de programação web para a exibição dos horários e informações de filmes do Cine Bangue, localizado no Espaço Cultural José Lins do Rego. 
 
