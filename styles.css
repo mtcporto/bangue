@@ -1,0 +1,58 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo do componente de calendário */
+  .calendar-date-link {
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+    margin: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .calendar-date-link.current {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .calendar-date-link .day,
+  .calendar-date-link .num,
+  .calendar-date-link .month {
+    display: block;
+    text-transform: uppercase;
+  }
+  
+  .calendar-date-link .day {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .calendar-date-link .num {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .calendar-date-link .month {
+    font-size: 12px;
+  }
+  
+  .roller-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .roller-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }

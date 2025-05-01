@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programação do Cine Banguê</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Header styles */
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px; /* Espaçamento entre o header e os cards */
+    }
+
+    /* Movie card styles */
+    .movie-card {
+      margin-bottom: 20px;
+      transition: box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra aos cards */
+    }
+
+    .movie-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra no hover */
+      transform: translateY(-4px);
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px;
+      margin-top: 20px; /* Espaçamento entre os cards e o footer */
+    }
+
+    /* Custom alert styles */
+    .custom-alert {
+      background-color: #d4edda;
+      border-color: #c3e6cb;
+      color: #155724;
+      padding: 20px;
+      margin-top: 20px; /* Espaçamento entre os cards e o alerta */
+    }
+
+    .alert-heading {
+      color: #0d6efd;
+    }
+
+    /* Estilos gerais */
+    main {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align:center; 
+    }
+
+    /* Estilo do componente de calendário */
+    .calendar-date-link {
+      display: inline-block;
+      width: 60px; /* Ajuste conforme necessário */
+      height: 80px; /* Ajuste conforme necessário */
+      margin: 5px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .calendar-date-link.current {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .calendar-date-link .day,
+    .calendar-date-link .month {
+      font-size: 12px; /* Ajuste conforme necessário */
+      font-weight: bold; /* Ajuste conforme necessário */
+      margin-top: 2px; /* Ajuste conforme necessário */
+      margin-bottom: 2px; /* Ajuste conforme necessário */
+    }
+
+    .calendar-date-link .num {
+      font-size: 36px; /* Ajuste conforme necessário */
+      font-weight: bold; /* Ajuste conforme necessário */
+      margin-top: 2px; /* Ajuste conforme necessário */
+      margin-bottom: 2px; /* Ajuste conforme necessário */
+    }
+
+    .roller-btn {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    .roller-btn.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    /* Estilo das informações dos filmes */
+    .movie-info {
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Programação do Cine Banguê</h1>
+  </header>
+
+  <div class="container">
+    <div class="row" id="movies"></div>
+  </div>
+
+  <main>
+    <div id="calendar-date-roller" class="roller-holder js-roller calendar-date-roller" data-offset="1">
+      <div class="roller-overflow">
+        <div class="roller-slider">
+          <!-- As datas serão renderizadas aqui -->
+        </div>
+      </div>
+      <div class="roller-btn-holder">
+        <button type="button" class="roller-btn btn-left icon icon-arrow-left disabled"></button>
+        <button type="button" class="roller-btn btn-right icon icon-arrow-right"></button>
+      </div>
+    </div>
+    <div id="movie-container">
+      <!-- As informações dos filmes serão exibidas aqui -->
+    </div>
+  </main>
+
+
+  <!-- Alerta do Espaço Cultural José Lins do Rego -->
+  <div class="alert custom-alert" role="alert">
+    <h4 class="alert-heading">Espaço Cultural José Lins do Rego</h4>
+    <p>Endereço: R. Abdias Gomes de Almeida, 800<br>
+       Bairro: Tambauzinho</p>
+    <h5>Ingressos:</h5>
+    <p>Inteira: R$ 10<br>
+       Meia: R$ 5</p>
+    <p>*É possível efetuar o pagamento via PIX.</p>
+  </div>
+
+  <!-- Bootstrap JS (optional, only required if you use Bootstrap components) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script>
+    // API key for TMDb
+    const apiKey = '6655c36ae61cd1554fff7fe2b431ccf7';
+
+    // Array of movie details from the provided list
+    const moviesList = [
+      {
+        "titulo": "Eu, capitão",
+        "diretor": "Matteo Garrone"
+      },
+      {
+        "titulo": "O melhor está por vir",
+        "diretor": "Nanni Moretti"
+      },
+      {
+        "titulo": "As bestas",
+        "diretor": "Rodrigo Sorogoyen"
+      },
+      {
+        "titulo": "Nada será como antes",
+        "diretor": "Ana Rieper"
+      },
+      {
+        "titulo": "A matéria noturna",
+        "diretor": "Bernard Lessa"
+      },
+      {
+        "titulo": "Um filme de cinema",
+        "diretor": "Thiago B. Mendonça"
+      }
+    ];
+
+    // Function to search movies by title and director
+    async function searchMoviesByTitleAndDirector(title, director) {
+      const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${title}&with_people=${director}`);
+      const data = await response.json();
+      return data.results;
+    }
+
+    // Function to get movie details by ID
+    async function getMovieDetailsById(movieId) {
+      const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=pt-BR`);
+      const data = await response.json();
+      return data;
+    }
+
+    // Function to get movie genres by genre IDs
+    async function getMovieGenres(genreIds) {
+      const response = await fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=pt-BR`);
+      const data = await response.json();
+      const genreMap = {};
+      data.genres.forEach(genre => {
+        genreMap[genre.id] = genre.name;
+      });
+      return genreIds.map(id => genreMap[id]).join(', ');
+    }
+
+    // Function to render movie cards
+    async function renderMovieCards() {
+      const moviesContainer = document.getElementById('movies');
+      
+      // Clear previous content
+      moviesContainer.innerHTML = '';
+
+      // Render movie cards for each movie in the list
+      for (const movie of moviesList) {
+        const { titulo, diretor } = movie;
+
+        const results = await searchMoviesByTitleAndDirector(titulo, diretor);
+        const movieDetails = results.length > 0 ? results[0] : null;
+
+        if (movieDetails) {
+          const { id, title, poster_path, release_date, genre_ids, vote_average } = movieDetails;
+          const movieYear = release_date ? release_date.split('-')[0] : 'N/A';
+          const movieGenres = await getMovieGenres(genre_ids);
+
+          // Get movie details using ID to fetch runtime
+          const details = await getMovieDetailsById(id);
+          const movieRuntime = details.runtime ? `${Math.floor(details.runtime / 60)}h ${details.runtime % 60}m` : 'N/A';
+          const userRating = vote_average * 10; // Convertendo para uma escala de 0 a 100
+
+          // Construindo o link para a página do filme no TMDb
+          const moviePageUrl = `https://www.themoviedb.org/movie/${id}`;
+
+          const movieCard = `
+            <div class="col-md-6 col-lg-3">
+              <div class="card movie-card">
+                <a href="${moviePageUrl}" target="_blank">
+                  <img src="https://image.tmdb.org/t/p/w500/${poster_path}" class="card-img-top" alt="${title}">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">${title} (${movieYear})</h5>
+                  <p class="card-text">Tipo: ${movieGenres}</p>
+                  <p class="card-text">Duração: ${movieRuntime}</p>
+                  <p class="card-text">Avaliação dos usuários: ${userRating}%</p>
+                </div>
+              </div>
+            </div>
+          `;
+
+          moviesContainer.innerHTML += movieCard;
+        }
+      }
+    }
+
+    // Initial rendering of movie cards
+    renderMovieCards();
+  </script>
+
+<script>
+    const programacaoCineBangue = [
+    {
+      "data": "10/04",
+      "dia_semana": "Quarta",
+      "horario": "19h",
+      "filme": "Nada Será Como Antes"
+    },
+    {
+      "data": "11/04",
+      "dia_semana": "Quinta",
+      "horario": "17h",
+      "filme": "A Matéria Noturna"
+    },
+    {
+      "data": "11/04",
+      "dia_semana": "Quinta",
+      "horario": "19h",
+      "filme": "Eu, Capitão"
+    },
+    {
+      "data": "13/04",
+      "dia_semana": "Sábado",
+      "horario": "15h",
+      "filme": "Nada Será Como Antes"
+    },
+    {
+      "data": "13/04",
+      "dia_semana": "Sábado",
+      "horario": "17h",
+      "filme": "O Melhor Está Por Vir"
+    },
+    {
+      "data": "13/04",
+      "dia_semana": "Sábado",
+      "horario": "19h",
+      "filme": "As Bestas"
+    },
+    {
+      "data": "14/04",
+      "dia_semana": "Domingo",
+      "horario": "15h",
+      "filme": "Um filme de Cinema"
+    },
+    {
+      "data": "14/04",
+      "dia_semana": "Domingo",
+      "horario": "17h",
+      "filme": "A Matéria Noturna"
+    },
+    {
+      "data": "14/04",
+      "dia_semana": "Domingo",
+      "horario": "19h",
+      "filme": "Eu, Capitão"
+    },
+    {
+      "data": "15/04",
+      "dia_semana": "Segunda",
+      "horario": "19h",
+      "filme": "As Bestas"
+    },
+    {
+      "data": "16/04",
+      "dia_semana": "Terça",
+      "horario": "19h",
+      "filme": "O Melhor Está Por Vir"
+    },
+    {
+      "data": "17/04",
+      "dia_semana": "Quarta",
+      "horario": "19h",
+      "filme": "Eu, Capitão"
+    },
+    {
+      "data": "18/04",
+      "dia_semana": "Quinta",
+      "horario": "17h",
+      "filme": "Nada Será Como Antes"
+    },
+    {
+      "data": "18/04",
+      "dia_semana": "Quinta",
+      "horario": "19h",
+      "filme": "As Bestas"
+    },
+    {
+      "data": "20/04",
+      "dia_semana": "Sábado",
+      "horario": "15h",
+      "filme": "O Melhor Está Por Vir"
+    },
+    {
+      "data": "20/04",
+      "dia_semana": "Sábado",
+      "horario": "17h",
+      "filme": "A Matéria Noturna"
+    },
+    {
+      "data": "20/04",
+      "dia_semana": "Sábado",
+      "horario": "19h",
+      "filme": "Eu, Capitão"
+    },
+    {
+      "data": "21/04",
+      "dia_semana": "Domingo",
+      "horario": "15h",
+      "filme": "Um filme de Cinema"
+    },
+    {
+      "data": "21/04",
+      "dia_semana": "Domingo",
+      "horario": "17h",
+      "filme": "Nada Será Como Antes"
+    },
+    {
+      "data": "21/04",
+      "dia_semana": "Domingo",
+      "horario": "19h",
+      "filme": "As Bestas"
+    },
+    {
+      "data": "22/04",
+      "dia_semana": "Segunda",
+      "horario": "19h",
+      "filme": "O Melhor Está Por Vir"
+    },
+    {
+      "data": "23/04",
+      "dia_semana": "Terça",
+      "horario": "19h",
+      "filme": "Eu, Capitão"
+    },
+    {
+      "data": "24/04",
+      "dia_semana": "Quarta",
+      "horario": "19h",
+      "filme": "As Bestas"
+    },
+    {
+      "data": "25/04",
+      "dia_semana": "Quinta",
+      "horario": "17h",
+      "filme": "O Melhor Está Por Vir"
+    },
+    {
+      "data": "25/04",
+      "dia_semana": "Quinta",
+      "horario": "19h",
+      "filme": "A Matéria Noturna"
+    },
+    {
+      "data": "27/04",
+      "dia_semana": "Sábado",
+      "horario": "15h",
+      "filme": "A Matéria Noturna"
+    },
+    {
+      "data": "27/04",
+      "dia_semana": "Sábado",
+      "horario": "17h",
+      "filme": "Nada Será Como Antes"
+    },
+    {
+      "data": "27/04",
+      "dia_semana": "Sábado",
+      "horario": "19h",
+      "filme": "As Bestas"
+    },
+    {
+      "data": "28/04",
+      "dia_semana": "Domingo",
+      "horario": "15h",
+      "filme": "Um filme de Cinema"
+    },
+    {
+      "data": "28/04",
+      "dia_semana": "Domingo",
+      "horario": "17h",
+      "filme": "O Melhor Está Por Vir"
+    },
+    {
+      "data": "28/04",
+      "dia_semana": "Domingo",
+      "horario": "19h",
+      "filme": "Eu, Capitão"
+    },
+    {
+      "data": "29/04",
+      "dia_semana": "Segunda",
+      "horario": "19h",
+      "filme": "Nada Será Como Antes"
+    },
+    {
+      "data": "30/04",
+      "dia_semana": "Terça",
+      "horario": "19h",
+      "filme": "A Matéria Noturna"
+    }    ];
+
+    function renderizarDatas() {
+      const rollerSlider = document.querySelector('.roller-slider');
+      rollerSlider.innerHTML = '';
+
+      const uniqueDates = [...new Set(programacaoCineBangue.map(item => item.data))];
+      uniqueDates.slice(0, 7).forEach(date => {
+        const fullDate = `${date}/2024`; // Adicione o ano à data
+        const dateLink = document.createElement('span');
+        dateLink.classList.add('calendar-date-link', 'roller-item');
+        if (date === '10/04') {
+            dateLink.classList.add('current');
+        }
+        dateLink.innerHTML = `
+            <div class="day">${obterDiaSemana(fullDate)}</div>
+            <div class="num">${obterDia(fullDate)}</div>
+            <div class="month">${obterMes(fullDate)}</div>
+        `;
+        dateLink.addEventListener('click', () => exibirFilmes(date));
+        rollerSlider.appendChild(dateLink);
+        });
+
+      atualizarBotoes(uniqueDates);
+    }
+
+    function exibirFilmes(data) {
+      const movieContainer = document.getElementById('movie-container');
+      movieContainer.innerHTML = '';
+
+      const filmes = programacaoCineBangue.filter(item => item.data === data);
+      filmes.forEach(item => {
+        const movieInfo = document.createElement('div');
+        movieInfo.classList.add('movie-info');
+        movieInfo.innerHTML = `
+          <p>${item.horario} - ${item.filme}</p>
+        `;
+        movieContainer.appendChild(movieInfo);
+      });
+
+      atualizarDataSelecionada(data);
+    }
+
+    function atualizarDataSelecionada(data) {
+      const dateLinks = document.querySelectorAll('.calendar-date-link');
+      dateLinks.forEach(link => {
+        link.classList.remove('current');
+        if (link.textContent.includes(obterDia(data))) {
+          link.classList.add('current');
+        }
+      });
+    }
+
+    function atualizarBotoes(uniqueDates) {
+      const rollerBtns = document.querySelectorAll('.roller-btn');
+      const firstDate = uniqueDates[0];
+      const lastDate = uniqueDates[uniqueDates.length - 1];
+
+      rollerBtns.forEach(btn => {
+        btn.classList.remove('disabled');
+        if (obterDia(firstDate) === '10') {
+          btn.classList.add('btn-left', 'disabled');
+        }
+        if (obterDia(lastDate) === '30') {
+          btn.classList.add('btn-right', 'disabled');
+        }
+      });
+    }
+
+    function obterDiaSemana(data) {
+      const dias = ['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SÁB'];
+      const diaSemana = new Date(data.split('/')[2], data.split('/')[1] - 1, data.split('/')[0]).getDay();
+      return dias[diaSemana];
+    }
+
+    function obterDia(data) {
+      return data.split('/')[0];
+    }
+
+    function obterMes(data) {
+      const meses = ['JAN', 'FEV', 'MAR', 'ABR', 'MAI', 'JUN', 'JUL', 'AGO', 'SET', 'OUT', 'NOV', 'DEZ'];
+      return meses[parseInt(data.split('/')[1]) - 1];
+    }
+
+    // Obtém a data atual
+    const dataAtual = new Date();
+
+    // Formata a data no formato dd/mm
+    const dataFormatada = ('0' + dataAtual.getDate()).slice(-2) + '/' + ('0' + (dataAtual.getMonth()+1)).slice(-2);
+
+    renderizarDatas();
+    exibirFilmes(dataFormatada);
+  </script>
+</body>
+</html>
