@@ -1,0 +1,2316 @@
+{
+  "schemaVersion": 1,
+  "venue": "Cine Bangüê",
+  "timezone": "America/Fortaleza",
+  "period": "2026-10",
+  "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+  "pdfUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/a3-outubro-2026.pdf/view",
+  "fetchedAt": "2026-10-07T04:13:32.620Z",
+  "sourceHash": "07fb7ad1e46e8fc0bb32db281524f5ea5d613eeffdc1777ab17463bcef7ada59",
+  "films": [
+    {
+      "id": "virtuosas",
+      "title": "VIRTUOSAS",
+      "director": "CÍNTIA DOMIT BITTAR",
+      "year": 2025,
+      "duration": 86,
+      "country": "BRASIL",
+      "rating": "16 ANOS",
+      "synopsis": "Um retiro VIP promete aperfeiçoar mulheres em busca de sua melhor versão, sob as regras de uma fé que não admite falhas. Mas essa jornada virtuosa acaba se revelando absurda e perigosa.",
+      "genre": null,
+      "poster": null,
+      "tmdbId": null,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+    },
+    {
+      "id": "cordelina",
+      "title": "CORDELINA",
+      "director": "JAIME GUIMARÃES",
+      "year": 2020,
+      "duration": 70,
+      "country": "BRASIL",
+      "rating": "10 ANOS",
+      "synopsis": "Uma mulher peregrina por estradas do interior de Pernambuco e Paraíba e leva um tesouro dentro de uma caixa. Por onde passa encontra pessoas que se encantam com a arte, a vida e a singeleza. Dentro de si ela reflete sobre sua terra, as memórias de sua amiga árvore Angico e conta histórias dentro de histórias.",
+      "genre": "FICÇÃO",
+      "poster": null,
+      "tmdbId": null,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+    },
+    {
+      "id": "as-cores-do-tempo",
+      "title": "AS CORES DO TEMPO",
+      "director": "CÉDRICK KLAPISCH",
+      "year": 2026,
+      "duration": 126,
+      "country": "FRANÇA, BÉLGICA",
+      "rating": "14 ANOS",
+      "synopsis": "Ao herdar uma antiga casa intocada desde 1940, quatro primos se reencontram e descobrem os segredos de Adèle, uma jovem de 20 anos que viveu ali em 1895 antes de partir para Paris. Ao seguir seus passos, o passado ressurge e cria paralelos surpreendentes com o presente.",
+      "genre": "DRAMA",
+      "poster": null,
+      "tmdbId": null,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+    },
+    {
+      "id": "morte-e-vida-madalena",
+      "title": "MORTE E VIDA MADALENA",
+      "director": "GUTO PARENTE",
+      "year": 2026,
+      "duration": 85,
+      "country": "BRASIL, PORTUGAL",
+      "rating": "12 ANOS",
+      "synopsis": "Numa aldeia remota no alto das montanhas turcas, o regresso de um clã exilado reacende uma antiga disputa de terras. Ressentimentos adormecidos ressurgem e Mesut, irmão do líder local, é acometido por visões perturbadoras que acredita serem avisos divinos.",
+      "genre": null,
+      "poster": null,
+      "tmdbId": null,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+    },
+    {
+      "id": "mirrors-n3",
+      "title": "MIRRORS Nº3",
+      "director": "CHRISTIAN PETZOLD",
+      "year": 2026,
+      "duration": 86,
+      "country": "ALEMANHA",
+      "rating": "14 ANOS",
+      "synopsis": "Após sobreviver a um acidente de carro no campo, Laura, uma estudante de Berlim, é acolhida por Betty e sua família. A aparente tranquilidade da convivência logo dá lugar a segredos do passado, obrigando Laura a confrontar a própria vida.",
+      "genre": "DRAMA",
+      "poster": null,
+      "tmdbId": null,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+    },
+    {
+      "id": "akira",
+      "title": "AKIRA",
+      "director": "KATSUHIRO OTOMO",
+      "year": 1988,
+      "duration": 124,
+      "country": "JAPÃO",
+      "rating": "14 ANOS",
+      "synopsis": "Em 2019, três décadas após o governo japonês destruir Tóquio com uma bomba nuclear para encobrir um experimento com crianças paranormais, o motoqueiro cyberpunk Kaneda embarca em uma missão perigosa para salvar seu amigo Tetsuo de uma conspiração governamental de proporções inimagináveis.",
+      "genre": null,
+      "poster": null,
+      "tmdbId": null,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+    },
+    {
+      "id": "papaya",
+      "title": "PAPAYA",
+      "director": "PRISCILLA KELLEN",
+      "year": 2026,
+      "duration": 75,
+      "country": "BRASIL",
+      "rating": "LIVRE",
+      "synopsis": "Papaya é uma semente de mamão diferente das outras... Ela não quer ser árvore como sua mãe. Seu sonho é poder voar livremente para conhecer o mundo todo. Numa de suas tentativas ela se perde e acaba descobrindo um terrível segredo. Para realizar seu sonho ela terá que enfrentar desafios assustadores e alguns mistérios da natureza.",
+      "genre": "ANIMAÇÃO",
+      "poster": null,
+      "tmdbId": null,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+    },
+    {
+      "id": "ran",
+      "title": "RAN",
+      "director": "AKIRA KUROSAWA",
+      "year": 1985,
+      "duration": 160,
+      "country": "JAPÃO, FRANÇA",
+      "rating": "16 ANOS",
+      "synopsis": "No Japão medieval, um senhor feudal decide abdicar e entregar seus domínios aos seus três filhos. Mas ele não é capaz de ver que esses novos poderes irão corrompê-los e levá-los a enfrentar um ao outro, e contra ele.",
+      "genre": "AÇÃO",
+      "poster": null,
+      "tmdbId": null,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+    },
+    {
+      "id": "amelia-toledo-lembrar-de-nao-esquecer",
+      "title": "AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "director": "HÉLIO GOLDSZTEJN",
+      "year": 2026,
+      "duration": 82,
+      "country": "BRASIL",
+      "rating": "10 ANOS",
+      "synopsis": "A vida e a obra de uma das artistas mais inquietas e inovadoras da arte brasileira. Revela a trajetória de uma criadora que transformava a própria casa em ateliê, indo do desenho de joias à escultura e experimentando com materiais tão diversos quanto acrílico, chapas de metal, pedras e conchas.",
+      "genre": "DOCUMENTÁRIO",
+      "poster": null,
+      "tmdbId": null,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+    },
+    {
+      "id": "rosebush-pruning",
+      "title": "ROSEBUSH PRUNING",
+      "director": "KARIM AÏNOUZ",
+      "year": 2026,
+      "duration": 94,
+      "country": "REINO UNIDO, ITÁLIA E ALEMANHA",
+      "rating": "18 ANOS",
+      "synopsis": "Sob o sol da Catalunha, uma rica família branca norte-americana vive em um isolamento hedonista, buscando amor e validação uns nos outros, em suas roupas de grife e na música pop. Quando Jack, o irmão mais velho, apresenta sua noiva Martha para a família, tensões há muito tempo reprimidas vêm à tona e os laços de sangue da matilha começam a se romper.",
+      "genre": "DRAMA",
+      "poster": null,
+      "tmdbId": null,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+    },
+    {
+      "id": "ao-sabor-das-cinzas",
+      "title": "AO SABOR DAS CINZAS",
+      "director": "TACIANO VALÉRIO",
+      "year": 2026,
+      "duration": 84,
+      "country": "BRASIL",
+      "rating": "16 ANOS",
+      "synopsis": "Duas irmãs, Bethânia e Laura, se reencontram para tratar de um assunto familiar. Elas seguem viagem pelas estradas do agreste pernambucano em busca do corpo do pai. Em casa, a filha de Bethânia edita um vídeo em que vivos e mortos se confundem num jogo de silêncios e revelações.",
+      "genre": "DRAMA",
+      "poster": null,
+      "tmdbId": null,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+    },
+    {
+      "id": "meu-verao-na-sicilia",
+      "title": "MEU VERÃO NA SICÍLIA",
+      "director": "MARGHERITA SPAMPINATO",
+      "year": 2026,
+      "duration": 90,
+      "country": "ITÁLIA",
+      "rating": "12 ANOS",
+      "synopsis": "Num mundo hiperconectado e dominado pela tecnologia, o irreverente e impetuoso Nico é obrigado a passar o verão na Sicília, na casa de uma tia idosa, profundamente religiosa e de temperamento difícil, que vive sozinha num antigo palácio suspenso no tempo. Sem wi-fi, sem eletrodomésticos: apenas lendas, superstições e um universo povoado por anjos e espíritos.",
+      "genre": "DRAMA",
+      "poster": null,
+      "tmdbId": null,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "bangue-2026-10-01-1600",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-01",
+      "time": "16:00",
+      "startsAt": "2026-10-01T16:00:00-03:00",
+      "title": "VIRTUOSAS",
+      "filmId": "virtuosas",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H — VIRTUOSAS",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-01-1810",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-01",
+      "time": "18:10",
+      "startsAt": "2026-10-01T18:10:00-03:00",
+      "title": "CORDELINA",
+      "filmId": "cordelina",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H10 — CORDELINA",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-01-1930",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-01",
+      "time": "19:30",
+      "startsAt": "2026-10-01T19:30:00-03:00",
+      "title": "AS CORES DO TEMPO",
+      "filmId": "as-cores-do-tempo",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H30 — AS CORES DO TEMPO",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-02-1600",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-02",
+      "time": "16:00",
+      "startsAt": "2026-10-02T16:00:00-03:00",
+      "title": "MORTE E VIDA MADALENA",
+      "filmId": "morte-e-vida-madalena",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H — MORTE E VIDA MADALENA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-02-1800",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-02",
+      "time": "18:00",
+      "startsAt": "2026-10-02T18:00:00-03:00",
+      "title": "MIRRORS Nº3",
+      "filmId": "mirrors-n3",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H — MIRRORS Nº3",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-02-1940",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-02",
+      "time": "19:40",
+      "startsAt": "2026-10-02T19:40:00-03:00",
+      "title": "AKIRA",
+      "filmId": "akira",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H40 — AKIRA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-04-1500",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-04",
+      "time": "15:00",
+      "startsAt": "2026-10-04T15:00:00-03:00",
+      "title": "PAPAYA",
+      "filmId": "papaya",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H — PAPAYA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-04-1630",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-04",
+      "time": "16:30",
+      "startsAt": "2026-10-04T16:30:00-03:00",
+      "title": "AS CORES DO TEMPO",
+      "filmId": "as-cores-do-tempo",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H30 — AS CORES DO TEMPO",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-04-1850",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-04",
+      "time": "18:50",
+      "startsAt": "2026-10-04T18:50:00-03:00",
+      "title": "RAN",
+      "filmId": "ran",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H50 — RAN",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-06-1600",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-06",
+      "time": "16:00",
+      "startsAt": "2026-10-06T16:00:00-03:00",
+      "title": "MIRRORS Nº3",
+      "filmId": "mirrors-n3",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H — MIRRORS Nº3",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-06-1800",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-06",
+      "time": "18:00",
+      "startsAt": "2026-10-06T18:00:00-03:00",
+      "title": "VIRTUOSAS",
+      "filmId": "virtuosas",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H — VIRTUOSAS",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-06-1940",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-06",
+      "time": "19:40",
+      "startsAt": "2026-10-06T19:40:00-03:00",
+      "title": "AKIRA",
+      "filmId": "akira",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H40 — AKIRA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-07-1530",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-07",
+      "time": "15:30",
+      "startsAt": "2026-10-07T15:30:00-03:00",
+      "title": "RAN",
+      "filmId": "ran",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H30 — RAN",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-07-1830",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-07",
+      "time": "18:30",
+      "startsAt": "2026-10-07T18:30:00-03:00",
+      "title": "CURTA BANGÜÊ III",
+      "filmId": null,
+      "kind": "shorts",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": true,
+      "price": {
+        "full": 0,
+        "half": 0
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H30 — CURTA BANGÜÊ III",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-07-1950",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-07",
+      "time": "19:50",
+      "startsAt": "2026-10-07T19:50:00-03:00",
+      "title": "AS CORES DO TEMPO",
+      "filmId": "as-cores-do-tempo",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H50 — AS CORES DO TEMPO",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-08-1500",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-08",
+      "time": "15:00",
+      "startsAt": "2026-10-08T15:00:00-03:00",
+      "title": "VIRTUOSAS",
+      "filmId": "virtuosas",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H — VIRTUOSAS",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-08-1650",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-08",
+      "time": "16:50",
+      "startsAt": "2026-10-08T16:50:00-03:00",
+      "title": "MORTE E VIDA MADALENA",
+      "filmId": "morte-e-vida-madalena",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H50 — MORTE E VIDA MADALENA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-08-1830",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-08",
+      "time": "18:30",
+      "startsAt": "2026-10-08T18:30:00-03:00",
+      "title": "CORDELINA",
+      "filmId": "cordelina",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H30 — CORDELINA",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-08-1950",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-08",
+      "time": "19:50",
+      "startsAt": "2026-10-08T19:50:00-03:00",
+      "title": "AKIRA",
+      "filmId": "akira",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H50 — AKIRA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-09-1630",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-09",
+      "time": "16:30",
+      "startsAt": "2026-10-09T16:30:00-03:00",
+      "title": "AS CORES DO TEMPO",
+      "filmId": "as-cores-do-tempo",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H30 — AS CORES DO TEMPO",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-09-1900",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-09",
+      "time": "19:00",
+      "startsAt": "2026-10-09T19:00:00-03:00",
+      "title": "RAN",
+      "filmId": "ran",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H — RAN",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-10-1500",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-10",
+      "time": "15:00",
+      "startsAt": "2026-10-10T15:00:00-03:00",
+      "title": "CORDELINA",
+      "filmId": "cordelina",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H — CORDELINA",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-10-1620",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-10",
+      "time": "16:20",
+      "startsAt": "2026-10-10T16:20:00-03:00",
+      "title": "MIRRORS Nº3",
+      "filmId": "mirrors-n3",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H20 — MIRRORS Nº3",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-10-1800",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-10",
+      "time": "18:00",
+      "startsAt": "2026-10-10T18:00:00-03:00",
+      "title": "MORTE E VIDA MADALENA",
+      "filmId": "morte-e-vida-madalena",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H — MORTE E VIDA MADALENA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-10-1940",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-10",
+      "time": "19:40",
+      "startsAt": "2026-10-10T19:40:00-03:00",
+      "title": "AKIRA",
+      "filmId": "akira",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H40 — AKIRA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-11-1330",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-11",
+      "time": "13:30",
+      "startsAt": "2026-10-11T13:30:00-03:00",
+      "title": "SESSÃO CURTAS",
+      "filmId": null,
+      "kind": "shorts",
+      "debate": false,
+      "accessible": false,
+      "children": true,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "13H30 — ESPAÇO DA CRIANÇA — SESSÃO CURTAS",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-11-1430",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-11",
+      "time": "14:30",
+      "startsAt": "2026-10-11T14:30:00-03:00",
+      "title": "PAPAYA",
+      "filmId": "papaya",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": true,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "14H30 — ESPAÇO DA CRIANÇA — PAPAYA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-11-1600",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-11",
+      "time": "16:00",
+      "startsAt": "2026-10-11T16:00:00-03:00",
+      "title": "SESSÃO CURTAS",
+      "filmId": null,
+      "kind": "shorts",
+      "debate": false,
+      "accessible": false,
+      "children": true,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H — ESPAÇO DA CRIANÇA — SESSÃO CURTAS",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-11-1730",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-11",
+      "time": "17:30",
+      "startsAt": "2026-10-11T17:30:00-03:00",
+      "title": "PAPAYA",
+      "filmId": "papaya",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": true,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "17H30 — ESPAÇO DA CRIANÇA — PAPAYA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-11-1930",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-11",
+      "time": "19:30",
+      "startsAt": "2026-10-11T19:30:00-03:00",
+      "title": "AKIRA",
+      "filmId": "akira",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H30 — AKIRA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-12-1500",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-12",
+      "time": "15:00",
+      "startsAt": "2026-10-12T15:00:00-03:00",
+      "title": "PAPAYA",
+      "filmId": "papaya",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H — PAPAYA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-12-1630",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-12",
+      "time": "16:30",
+      "startsAt": "2026-10-12T16:30:00-03:00",
+      "title": "AS CORES DO TEMPO",
+      "filmId": "as-cores-do-tempo",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H30 — AS CORES DO TEMPO",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-12-1850",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-12",
+      "time": "18:50",
+      "startsAt": "2026-10-12T18:50:00-03:00",
+      "title": "RAN",
+      "filmId": "ran",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H50 — RAN",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-13-1500",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-13",
+      "time": "15:00",
+      "startsAt": "2026-10-13T15:00:00-03:00",
+      "title": "AS CORES DO TEMPO",
+      "filmId": "as-cores-do-tempo",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H — AS CORES DO TEMPO",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-13-1710",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-13",
+      "time": "17:10",
+      "startsAt": "2026-10-13T17:10:00-03:00",
+      "title": "AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "filmId": "amelia-toledo-lembrar-de-nao-esquecer",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "17H10 — AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-13-1840",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-13",
+      "time": "18:40",
+      "startsAt": "2026-10-13T18:40:00-03:00",
+      "title": "MORTE E VIDA MADALENA",
+      "filmId": "morte-e-vida-madalena",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H40 — MORTE E VIDA MADALENA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-13-2020",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-13",
+      "time": "20:20",
+      "startsAt": "2026-10-13T20:20:00-03:00",
+      "title": "VIRTUOSAS",
+      "filmId": "virtuosas",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "20H20 — VIRTUOSAS",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-14-1500",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-14",
+      "time": "15:00",
+      "startsAt": "2026-10-14T15:00:00-03:00",
+      "title": "AKIRA",
+      "filmId": "akira",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H — AKIRA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-14-1720",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-14",
+      "time": "17:20",
+      "startsAt": "2026-10-14T17:20:00-03:00",
+      "title": "MIRRORS Nº3",
+      "filmId": "mirrors-n3",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "17H20 — MIRRORS Nº3",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-14-1900",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-14",
+      "time": "19:00",
+      "startsAt": "2026-10-14T19:00:00-03:00",
+      "title": "CURTA BANGÜÊ III",
+      "filmId": null,
+      "kind": "shorts",
+      "debate": true,
+      "accessible": false,
+      "children": false,
+      "free": true,
+      "price": {
+        "full": 0,
+        "half": 0
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H — CURTA BANGÜÊ III (+ DEBATE)",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-15-1600",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-15",
+      "time": "16:00",
+      "startsAt": "2026-10-15T16:00:00-03:00",
+      "title": "RAN",
+      "filmId": "ran",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H — RAN",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-15-1850",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-15",
+      "time": "18:50",
+      "startsAt": "2026-10-15T18:50:00-03:00",
+      "title": "CORDELINA",
+      "filmId": "cordelina",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H50 — CORDELINA",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-15-2010",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-15",
+      "time": "20:10",
+      "startsAt": "2026-10-15T20:10:00-03:00",
+      "title": "ROSEBUSH PRUNING",
+      "filmId": "rosebush-pruning",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "20H10 — ROSEBUSH PRUNING",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-16-1600",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-16",
+      "time": "16:00",
+      "startsAt": "2026-10-16T16:00:00-03:00",
+      "title": "CORDELINA",
+      "filmId": "cordelina",
+      "kind": "film",
+      "debate": false,
+      "accessible": true,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H — BANGÜÊ ACESSÍVEL (CORDELINA)",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-16-1830",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-16",
+      "time": "18:30",
+      "startsAt": "2026-10-16T18:30:00-03:00",
+      "title": "AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "filmId": "amelia-toledo-lembrar-de-nao-esquecer",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H30 — AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-16-2000",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-16",
+      "time": "20:00",
+      "startsAt": "2026-10-16T20:00:00-03:00",
+      "title": "MORTE E VIDA MADALENA",
+      "filmId": "morte-e-vida-madalena",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "20H — MORTE E VIDA MADALENA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-17-1500",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-17",
+      "time": "15:00",
+      "startsAt": "2026-10-17T15:00:00-03:00",
+      "title": "PAPAYA",
+      "filmId": "papaya",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H — PAPAYA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-17-1640",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-17",
+      "time": "16:40",
+      "startsAt": "2026-10-17T16:40:00-03:00",
+      "title": "AKIRA",
+      "filmId": "akira",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H40 — AKIRA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-17-1900",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-17",
+      "time": "19:00",
+      "startsAt": "2026-10-17T19:00:00-03:00",
+      "title": "RAN",
+      "filmId": "ran",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H — RAN",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-18-1500",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-18",
+      "time": "15:00",
+      "startsAt": "2026-10-18T15:00:00-03:00",
+      "title": "MORTE E VIDA MADALENA",
+      "filmId": "morte-e-vida-madalena",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H — MORTE E VIDA MADALENA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-18-1630",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-18",
+      "time": "16:30",
+      "startsAt": "2026-10-18T16:30:00-03:00",
+      "title": "MIRRORS Nº3",
+      "filmId": "mirrors-n3",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H30 — MIRRORS Nº3",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-18-1800",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-18",
+      "time": "18:00",
+      "startsAt": "2026-10-18T18:00:00-03:00",
+      "title": "VIRTUOSAS",
+      "filmId": "virtuosas",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H — VIRTUOSAS",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-18-2020",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-18",
+      "time": "20:20",
+      "startsAt": "2026-10-18T20:20:00-03:00",
+      "title": "ROSEBUSH PRUNING",
+      "filmId": "rosebush-pruning",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "20H20 — ROSEBUSH PRUNING",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-19-1600",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-19",
+      "time": "16:00",
+      "startsAt": "2026-10-19T16:00:00-03:00",
+      "title": "AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "filmId": "amelia-toledo-lembrar-de-nao-esquecer",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H — AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-19-1730",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-19",
+      "time": "17:30",
+      "startsAt": "2026-10-19T17:30:00-03:00",
+      "title": "VIRTUOSAS",
+      "filmId": "virtuosas",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "17H30 — VIRTUOSAS",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-19-1900",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-19",
+      "time": "19:00",
+      "startsAt": "2026-10-19T19:00:00-03:00",
+      "title": "RAN",
+      "filmId": "ran",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H — RAN",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-20-1600",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-20",
+      "time": "16:00",
+      "startsAt": "2026-10-20T16:00:00-03:00",
+      "title": "MIRRORS Nº3",
+      "filmId": "mirrors-n3",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H — MIRRORS Nº3",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-20-1800",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-20",
+      "time": "18:00",
+      "startsAt": "2026-10-20T18:00:00-03:00",
+      "title": "AS CORES DO TEMPO",
+      "filmId": "as-cores-do-tempo",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H — AS CORES DO TEMPO",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-20-2010",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-20",
+      "time": "20:10",
+      "startsAt": "2026-10-20T20:10:00-03:00",
+      "title": "ROSEBUSH PRUNING",
+      "filmId": "rosebush-pruning",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "20H10 — ROSEBUSH PRUNING",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-21-1600",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-21",
+      "time": "16:00",
+      "startsAt": "2026-10-21T16:00:00-03:00",
+      "title": "VIRTUOSAS",
+      "filmId": "virtuosas",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H — VIRTUOSAS",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-21-1830",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-21",
+      "time": "18:30",
+      "startsAt": "2026-10-21T18:30:00-03:00",
+      "title": "CURTA BANGÜÊ",
+      "filmId": null,
+      "kind": "shorts",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": true,
+      "price": {
+        "full": 0,
+        "half": 0
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H30 — CURTA BANGÜÊ",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-21-1930",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-21",
+      "time": "19:30",
+      "startsAt": "2026-10-21T19:30:00-03:00",
+      "title": "CORDELINA",
+      "filmId": "cordelina",
+      "kind": "film",
+      "debate": true,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H30 — CORDELINA (+ DEBATE)",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-22-1500",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-22",
+      "time": "15:00",
+      "startsAt": "2026-10-22T15:00:00-03:00",
+      "title": "AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "filmId": "amelia-toledo-lembrar-de-nao-esquecer",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H — AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-22-1700",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-22",
+      "time": "17:00",
+      "startsAt": "2026-10-22T17:00:00-03:00",
+      "title": "AO SABOR DAS CINZAS",
+      "filmId": "ao-sabor-das-cinzas",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "17H — AO SABOR DAS CINZAS",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-22-1840",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-22",
+      "time": "18:40",
+      "startsAt": "2026-10-22T18:40:00-03:00",
+      "title": "ROSEBUSH PRUNING",
+      "filmId": "rosebush-pruning",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H40 — ROSEBUSH PRUNING",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-22-2030",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-22",
+      "time": "20:30",
+      "startsAt": "2026-10-22T20:30:00-03:00",
+      "title": "MEU VERÃO NA SICÍLIA",
+      "filmId": "meu-verao-na-sicilia",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "20H30 — MEU VERÃO NA SICÍLIA",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-23-1500",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-23",
+      "time": "15:00",
+      "startsAt": "2026-10-23T15:00:00-03:00",
+      "title": "MEU VERÃO NA SICÍLIA",
+      "filmId": "meu-verao-na-sicilia",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H — MEU VERÃO NA SICÍLIA",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-23-1715",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-23",
+      "time": "17:15",
+      "startsAt": "2026-10-23T17:15:00-03:00",
+      "title": "CORDELINA",
+      "filmId": "cordelina",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "17H15 — CORDELINA",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-23-1840",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-23",
+      "time": "18:40",
+      "startsAt": "2026-10-23T18:40:00-03:00",
+      "title": "RAN",
+      "filmId": "ran",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H40 — RAN",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-26-1600",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-26",
+      "time": "16:00",
+      "startsAt": "2026-10-26T16:00:00-03:00",
+      "title": "CORDELINA",
+      "filmId": "cordelina",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H — CORDELINA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-26-1800",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-26",
+      "time": "18:00",
+      "startsAt": "2026-10-26T18:00:00-03:00",
+      "title": "AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "filmId": "amelia-toledo-lembrar-de-nao-esquecer",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H — AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-26-1940",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-26",
+      "time": "19:40",
+      "startsAt": "2026-10-26T19:40:00-03:00",
+      "title": "MEU VERÃO NA SICÍLIA",
+      "filmId": "meu-verao-na-sicilia",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H40 — MEU VERÃO NA SICÍLIA",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-27-1500",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-27",
+      "time": "15:00",
+      "startsAt": "2026-10-27T15:00:00-03:00",
+      "title": "AS CORES DO TEMPO",
+      "filmId": "as-cores-do-tempo",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H — AS CORES DO TEMPO",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-27-1710",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-27",
+      "time": "17:10",
+      "startsAt": "2026-10-27T17:10:00-03:00",
+      "title": "AO SABOR DAS CINZAS",
+      "filmId": "ao-sabor-das-cinzas",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "17H10 — AO SABOR DAS CINZAS",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-27-1840",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-27",
+      "time": "18:40",
+      "startsAt": "2026-10-27T18:40:00-03:00",
+      "title": "MEU VERÃO NA SICÍLIA",
+      "filmId": "meu-verao-na-sicilia",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H40 — MEU VERÃO NA SICÍLIA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-27-2015",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-27",
+      "time": "20:15",
+      "startsAt": "2026-10-27T20:15:00-03:00",
+      "title": "ROSEBUSH PRUNING",
+      "filmId": "rosebush-pruning",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "20H15 — ROSEBUSH PRUNING",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-28-1530",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-28",
+      "time": "15:30",
+      "startsAt": "2026-10-28T15:30:00-03:00",
+      "title": "RAN",
+      "filmId": "ran",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H30 — RAN",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-28-1830",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-28",
+      "time": "18:30",
+      "startsAt": "2026-10-28T18:30:00-03:00",
+      "title": "CURTA BANGÜÊ III",
+      "filmId": null,
+      "kind": "shorts",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": true,
+      "price": {
+        "full": 0,
+        "half": 0
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H30 — CURTA BANGÜÊ III",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-28-1940",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-28",
+      "time": "19:40",
+      "startsAt": "2026-10-28T19:40:00-03:00",
+      "title": "AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "filmId": "amelia-toledo-lembrar-de-nao-esquecer",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H40 — AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-29-1600",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-29",
+      "time": "16:00",
+      "startsAt": "2026-10-29T16:00:00-03:00",
+      "title": "MIRRORS Nº3",
+      "filmId": "mirrors-n3",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H — MIRRORS Nº3",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-29-1730",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-29",
+      "time": "17:30",
+      "startsAt": "2026-10-29T17:30:00-03:00",
+      "title": "MEU VERÃO NA SICÍLIA",
+      "filmId": "meu-verao-na-sicilia",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "17H30 — MEU VERÃO NA SICÍLIA",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-29-1910",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-29",
+      "time": "19:10",
+      "startsAt": "2026-10-29T19:10:00-03:00",
+      "title": "AO SABOR DAS CINZAS",
+      "filmId": "ao-sabor-das-cinzas",
+      "kind": "film",
+      "debate": true,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H10 — AO SABOR DAS CINZAS (+ DEBATE)",
+      "needsReview": false
+    },
+    {
+      "id": "bangue-2026-10-30-1530",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-30",
+      "time": "15:30",
+      "startsAt": "2026-10-30T15:30:00-03:00",
+      "title": "RAN",
+      "filmId": "ran",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H30 — RAN",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-30-1820",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-30",
+      "time": "18:20",
+      "startsAt": "2026-10-30T18:20:00-03:00",
+      "title": "CORDELINA",
+      "filmId": "cordelina",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H20 — CORDELINA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-30-1940",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-30",
+      "time": "19:40",
+      "startsAt": "2026-10-30T19:40:00-03:00",
+      "title": "ROSEBUSH PRUNING",
+      "filmId": "rosebush-pruning",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H40 — ROSEBUSH PRUNING",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-31-1500",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-31",
+      "time": "15:00",
+      "startsAt": "2026-10-31T15:00:00-03:00",
+      "title": "PAPAYA",
+      "filmId": "papaya",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "15H — PAPAYA",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-31-1630",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-31",
+      "time": "16:30",
+      "startsAt": "2026-10-31T16:30:00-03:00",
+      "title": "AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "filmId": "amelia-toledo-lembrar-de-nao-esquecer",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "16H30 — AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-31-1800",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-31",
+      "time": "18:00",
+      "startsAt": "2026-10-31T18:00:00-03:00",
+      "title": "AO SABOR DAS CINZAS",
+      "filmId": "ao-sabor-das-cinzas",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "18H — AO SABOR DAS CINZAS",
+      "needsReview": true
+    },
+    {
+      "id": "bangue-2026-10-31-1940",
+      "venue": "Cine Bangüê",
+      "date": "2026-10-31",
+      "time": "19:40",
+      "startsAt": "2026-10-31T19:40:00-03:00",
+      "title": "MEU VERÃO NA SICÍLIA",
+      "filmId": "meu-verao-na-sicilia",
+      "kind": "film",
+      "debate": false,
+      "accessible": false,
+      "children": false,
+      "free": false,
+      "price": {
+        "full": 10,
+        "half": 5
+      },
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "sourceText": "19H40 — MEU VERÃO NA SICÍLIA",
+      "needsReview": true
+    }
+  ],
+  "noSessionDates": [
+    "2026-10-03",
+    "2026-10-05",
+    "2026-10-24",
+    "2026-10-25"
+  ],
+  "issues": [
+    {
+      "id": "28f2ef2818e266d1",
+      "code": "ambiguous_closed_day",
+      "message": "“Sem sessão” após horários de 2026-10-31; horários mantidos para revisão.",
+      "sessionIds": [
+        "bangue-2026-10-31-1500",
+        "bangue-2026-10-31-1630",
+        "bangue-2026-10-31-1800",
+        "bangue-2026-10-31-1940"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "5af194d3a812ba9b",
+      "code": "incomplete_film_list",
+      "message": "VIRTUOSAS: 4 sessão(ões) da grade ausente(s) na ficha por filme.",
+      "sessionIds": [
+        "bangue-2026-10-13-2020",
+        "bangue-2026-10-18-1800",
+        "bangue-2026-10-19-1730",
+        "bangue-2026-10-21-1600"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "720ce3fb3f7e2d8e",
+      "code": "incomplete_film_list",
+      "message": "CORDELINA: 2 sessão(ões) da grade ausente(s) na ficha por filme.",
+      "sessionIds": [
+        "bangue-2026-10-26-1600",
+        "bangue-2026-10-30-1820"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "a597de8380e9014e",
+      "code": "incomplete_film_list",
+      "message": "AS CORES DO TEMPO: 5 sessão(ões) da grade ausente(s) na ficha por filme.",
+      "sessionIds": [
+        "bangue-2026-10-04-1630",
+        "bangue-2026-10-12-1630",
+        "bangue-2026-10-13-1500",
+        "bangue-2026-10-20-1800",
+        "bangue-2026-10-27-1500"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "68fcf4b522f4a339",
+      "code": "film_list_disagreement",
+      "message": "MORTE E VIDA MADALENA: ficha por filme cita 2026-10-24 15:00, ausente na grade diária. Nenhuma sessão adicionada.",
+      "sessionIds": [
+        "bangue-2026-10-02-1600",
+        "bangue-2026-10-08-1650",
+        "bangue-2026-10-10-1800",
+        "bangue-2026-10-13-1840",
+        "bangue-2026-10-16-2000",
+        "bangue-2026-10-18-1500"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "b12356316992e067",
+      "code": "film_list_disagreement",
+      "message": "MORTE E VIDA MADALENA: ficha por filme cita 2026-10-31 15:00, ausente na grade diária. Nenhuma sessão adicionada.",
+      "sessionIds": [
+        "bangue-2026-10-02-1600",
+        "bangue-2026-10-08-1650",
+        "bangue-2026-10-10-1800",
+        "bangue-2026-10-13-1840",
+        "bangue-2026-10-16-2000",
+        "bangue-2026-10-18-1500"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "332cb95e2b551679",
+      "code": "film_list_disagreement",
+      "message": "MORTE E VIDA MADALENA: ficha por filme cita 2026-10-13 20:00, ausente na grade diária. Nenhuma sessão adicionada.",
+      "sessionIds": [
+        "bangue-2026-10-02-1600",
+        "bangue-2026-10-08-1650",
+        "bangue-2026-10-10-1800",
+        "bangue-2026-10-13-1840",
+        "bangue-2026-10-16-2000",
+        "bangue-2026-10-18-1500"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "92a98a77917feded",
+      "code": "film_list_disagreement",
+      "message": "MORTE E VIDA MADALENA: ficha por filme cita 2026-10-18 18:00, ausente na grade diária. Nenhuma sessão adicionada.",
+      "sessionIds": [
+        "bangue-2026-10-02-1600",
+        "bangue-2026-10-08-1650",
+        "bangue-2026-10-10-1800",
+        "bangue-2026-10-13-1840",
+        "bangue-2026-10-16-2000",
+        "bangue-2026-10-18-1500"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "558dd8611e5804de",
+      "code": "film_list_disagreement",
+      "message": "MORTE E VIDA MADALENA: ficha por filme cita 2026-10-19 17:30, ausente na grade diária. Nenhuma sessão adicionada.",
+      "sessionIds": [
+        "bangue-2026-10-02-1600",
+        "bangue-2026-10-08-1650",
+        "bangue-2026-10-10-1800",
+        "bangue-2026-10-13-1840",
+        "bangue-2026-10-16-2000",
+        "bangue-2026-10-18-1500"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "8d7e0cd9f0e4a80e",
+      "code": "film_list_disagreement",
+      "message": "MORTE E VIDA MADALENA: ficha por filme cita 2026-10-21 16:00, ausente na grade diária. Nenhuma sessão adicionada.",
+      "sessionIds": [
+        "bangue-2026-10-02-1600",
+        "bangue-2026-10-08-1650",
+        "bangue-2026-10-10-1800",
+        "bangue-2026-10-13-1840",
+        "bangue-2026-10-16-2000",
+        "bangue-2026-10-18-1500"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "949fa64df770c558",
+      "code": "film_list_disagreement",
+      "message": "AKIRA: ficha por filme cita 2026-10-12 19:30, ausente na grade diária. Nenhuma sessão adicionada.",
+      "sessionIds": [
+        "bangue-2026-10-02-1940",
+        "bangue-2026-10-06-1940",
+        "bangue-2026-10-08-1950",
+        "bangue-2026-10-10-1940",
+        "bangue-2026-10-11-1930",
+        "bangue-2026-10-14-1500",
+        "bangue-2026-10-17-1640"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "f9102e94e205410e",
+      "code": "incomplete_film_list",
+      "message": "AKIRA: 1 sessão(ões) da grade ausente(s) na ficha por filme.",
+      "sessionIds": [
+        "bangue-2026-10-11-1930"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "aa5bfe01eea5d31d",
+      "code": "film_list_disagreement",
+      "message": "PAPAYA: ficha por filme cita 2026-10-11 15:00, ausente na grade diária. Nenhuma sessão adicionada.",
+      "sessionIds": [
+        "bangue-2026-10-04-1500",
+        "bangue-2026-10-11-1430",
+        "bangue-2026-10-11-1730",
+        "bangue-2026-10-12-1500",
+        "bangue-2026-10-17-1500",
+        "bangue-2026-10-31-1500"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "511d99cad3cbfe7b",
+      "code": "incomplete_film_list",
+      "message": "PAPAYA: 4 sessão(ões) da grade ausente(s) na ficha por filme.",
+      "sessionIds": [
+        "bangue-2026-10-04-1500",
+        "bangue-2026-10-11-1430",
+        "bangue-2026-10-11-1730",
+        "bangue-2026-10-31-1500"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "b242da5ee181d30c",
+      "code": "film_list_disagreement",
+      "message": "RAN: ficha por filme cita 2026-10-11 18:50, ausente na grade diária. Nenhuma sessão adicionada.",
+      "sessionIds": [
+        "bangue-2026-10-04-1850",
+        "bangue-2026-10-07-1530",
+        "bangue-2026-10-09-1900",
+        "bangue-2026-10-12-1850",
+        "bangue-2026-10-15-1600",
+        "bangue-2026-10-17-1900",
+        "bangue-2026-10-19-1900",
+        "bangue-2026-10-23-1840",
+        "bangue-2026-10-28-1530",
+        "bangue-2026-10-30-1530"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "871dda93e7a3125a",
+      "code": "incomplete_film_list",
+      "message": "RAN: 3 sessão(ões) da grade ausente(s) na ficha por filme.",
+      "sessionIds": [
+        "bangue-2026-10-04-1850",
+        "bangue-2026-10-12-1850",
+        "bangue-2026-10-19-1900"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "1ecf2a73c4d6f846",
+      "code": "film_list_disagreement",
+      "message": "ROSEBUSH PRUNING: ficha por filme cita 2026-10-26 16:00, ausente na grade diária. Nenhuma sessão adicionada.",
+      "sessionIds": [
+        "bangue-2026-10-15-2010",
+        "bangue-2026-10-18-2020",
+        "bangue-2026-10-20-2010",
+        "bangue-2026-10-22-1840",
+        "bangue-2026-10-27-2015",
+        "bangue-2026-10-30-1940"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "11c27dcbba11739d",
+      "code": "film_list_disagreement",
+      "message": "ROSEBUSH PRUNING: ficha por filme cita 2026-10-30 18:20, ausente na grade diária. Nenhuma sessão adicionada.",
+      "sessionIds": [
+        "bangue-2026-10-15-2010",
+        "bangue-2026-10-18-2020",
+        "bangue-2026-10-20-2010",
+        "bangue-2026-10-22-1840",
+        "bangue-2026-10-27-2015",
+        "bangue-2026-10-30-1940"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "3d95b1f759f6ccc6",
+      "code": "incomplete_film_list",
+      "message": "MEU VERÃO NA SICÍLIA: 1 sessão(ões) da grade ausente(s) na ficha por filme.",
+      "sessionIds": [
+        "bangue-2026-10-27-1840"
+      ],
+      "resolved": false
+    }
+  ],
+  "validation": [
+    {
+      "name": "Obrigado, Cinema!",
+      "url": "https://renatofelix.wordpress.com/programacao-dos-cinemas-na-paraiba/",
+      "status": "fulfilled",
+      "checkedAt": "2026-10-07T04:13:33.154Z",
+      "observations": 60,
+      "matched": 60
+    }
+  ]
+}

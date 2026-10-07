@@ -1,0 +1,34 @@
+{
+  "name": "cine-bangue",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "import:funesc": "tsx scripts/import-funesc.ts",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.18.0",
+    "cheerio": "^1.2.0",
+    "lucide-react": "^1.52.0",
+    "next": "^16.4.0",
+    "next-auth": "^5.0.0-beta.32",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "dotenv": "^18.0.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

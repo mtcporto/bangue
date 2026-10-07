@@ -1,43 +1,167 @@
-# Projeto CineBangue
+# Bangüê
 
-O projeto CineBangue é um sistema de programação web para a exibição dos horários e informações de filmes do Cine Bangue, localizado no Espaço Cultural José Lins do Rego. 
+Agenda independente, exclusivamente do **Cine Bangüê**, no Espaço Cultural José Lins do Rego, em João Pessoa. Next.js + TypeScript, API pública e armazenamento compatível com Turso/libSQL.
 
-## Descrição
+## O que está implementado
 
-Este sistema web permite que os usuários visualizem a programação de filmes em cartaz no Cine Bangue, com informações detalhadas sobre cada filme e seus horários de exibição. O site conta com um calendário interativo que permite aos usuários navegar pelos diferentes dias da programação.
+- Grade por dia, filmes do mês, páginas de filmes e layout responsivo.
+- Filtros de sessões gratuitas e acessíveis; indicação de debate e programação infantil.
+- Coleta da programação **HTML da FUNESC**, a partir do índice oficial.
+- Comparação entre grade diária e fichas por filme; divergências visíveis no site e na API.
+- Validação secundária com a agenda **Obrigado, Cinema!**, isolando os horários explicitamente atribuídos ao Cine Bangüê.
+- API JSON versionada, CORS público, cache, validação de parâmetros e limite de consultas.
+- Calendário iCalendar, compartilhamento de sessões e redirecionamento das URLs HTML antigas.
+- Histórico de importações, preservação da última programação válida e arquivo de referência para contingência.
+- Painel com Google OAuth, lista de administradores, revisão justificada e correção auditada de horários existentes.
+- Cron diário da Vercel, protegido por segredo.
+- Enriquecimento opcional e conservador com cartazes do TMDb.
 
-## Tecnologias Utilizadas
+O código de 2024 foi preservado em `archive/`. Ele não faz parte do site novo.
 
-- **HTML5**: Estruturação das páginas web
-- **CSS3**: Estilização e layout responsivo
-- **JavaScript**: Interatividade e manipulação dinâmica do conteúdo
-- **Bootstrap 5**: Framework CSS utilizado para a criação de componentes visuais e grid responsivo
-- **API TMDb (The Movie Database)**: Integração com API externa para obtenção de informações detalhadas sobre filmes, como cartazes, avaliações, duração e gêneros
+## Regra de escopo
 
-## Características
+**Somente a grade diária oficial do Cine Bangüê cria filmes e sessões.** As fichas por filme e fontes secundárias podem apontar inconsistências, mas nunca adicionar uma sessão. Um filme que aparece em outra sala, numa notícia ou no TMDb não entra no catálogo por isso.
 
-- Exibição de cards de filmes com informações detalhadas (cartazes, avaliações, duração)
-- Calendário interativo para navegação entre os dias da programação
-- Exibição dos horários de cada filme de acordo com o dia selecionado
-- Design responsivo, adaptando-se a diferentes tamanhos de tela
-- Integração com a API do TMDb para enriquecimento das informações dos filmes
+O PDF oficial fica disponível como link quando encontrado no índice; não é extraído nem utilizado para validar os horários. Uma indisponibilidade do HTML preserva os dados anteriores. Ainda não há importação automática de programação completa a partir de jornais.
 
-## Estrutura do Projeto
+A ausência de dados para uma data não significa “sem sessão”. Apenas declarações explícitas da fonte entram em `noSessionDates`. Um “sem sessão” contraditório não apaga os horários.
 
-- **index.html**: Página principal com a exibição dos cards de filmes e calendário
-- **datas.html**: Página dedicada à exibição dos horários por data
-- **script.js**: Lógica principal do funcionamento do calendário e exibição de filmes
-- **styles.css**: Estilos customizados para o projeto
+## Rodar localmente
 
-## Como Utilizar
+Requer Node.js 22.9+ (desenvolvimento verificado com Node 24) e npm.
 
-Para visualizar a programação, o usuário pode:
+```bash
+npm ci
+cp .env.example .env.local
+```
 
-1. Navegar pelos cards de filmes na página principal
-2. Utilizar o calendário para selecionar datas específicas
-3. Visualizar os horários disponíveis para cada filme na data selecionada
-4. Clicar nos cards para obter mais informações sobre o filme no site do TMDb
+Para gravar localmente, defina em `.env.local`:
 
-## Informações Adicionais
+```dotenv
+TURSO_DATABASE_URL=file:./data/bangue.db
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+```
 
-O Cine Bangue está localizado no Espaço Cultural José Lins do Rego, no endereço: R. Abdias Gomes de Almeida, 800, bairro Tambauzinho. Os ingressos custam R$ 10 (inteira) e R$ 5 (meia), com possibilidade de pagamento via PIX.
+Depois:
+
+```bash
+npm run db:migrate
+npm run import:funesc
+npm run dev
+```
+
+Abra `http://localhost:3000`. Sem banco configurado, o site e a API usam `data/schedule.json`, com a data real da última coleta. Esse arquivo é uma referência congelada, não uma coleta automática. O aviso de desatualização aparece após 48h ou quando o mês atual não é o publicado.
+
+Os scripts carregam `.env.local` explicitamente. O banco local, credenciais e arquivos `.env` não são versionados.
+
+## Turso e persistência
+
+Na produção, configure `TURSO_DATABASE_URL=libsql://...` e `TURSO_AUTH_TOKEN`. Rode a migração uma vez contra o banco escolhido, antes de ativar as importações.
+
+O schema guarda uma versão JSON completa da programação por mês, além de:
+
+- `imports`: fonte HTML capturada, horário, responsável, resultado e erro da coleta.
+- `schedules`: versão publicada de cada mês.
+- `reviews`: conferências e justificativas ligadas à versão da fonte.
+- `corrections`: alterações de data/horário de sessões já existentes, com autor e justificativa.
+- `rate_limits`: contadores compartilhados de consultas.
+
+A importação publica a captura e a programação numa transação. Coletas vazias, datas inválidas, horários duplicados, desaparecimento de dias ou redução inesperada de sessões falham sem substituir a programação anterior. Fontes secundárias indisponíveis não bloqueiam a fonte oficial.
+
+Revisões e correções são vinculadas ao hash do HTML oficial: uma mudança na fonte exige nova conferência. Correções mantêm o ID original da sessão, não podem trocar de mês, criar sessões, alterar o cinema ou ocupar um horário já preenchido. O texto original permanece disponível para auditoria.
+
+Uma falha de leitura do banco ativa o arquivo de referência e sinaliza `meta.contingencia`. Portanto, confira também `meta.periodo` e `meta.verificadoEm` ao consumir a API.
+
+## API pública
+
+Documentação humana em `/api-docs`.
+
+| Endpoint | Conteúdo |
+| --- | --- |
+| `GET /api/v1/programacao` | Sessões e dias declarados sem sessão |
+| `GET /api/v1/filmes` | Filmes com sessões na grade |
+| `GET /api/v1/filmes/:id` | Ficha e sessões do filme |
+| `GET /api/v1/sessoes/:id` | Sessão, ficha do filme e avisos |
+| `GET /api/v1/calendario` | Calendário `.ics` |
+
+Filtros: `inicio=YYYY-MM-DD`, `fim=YYYY-MM-DD` e `filme=<id>`. Consulte um mês por requisição; limites inclusivos. Sem filtros, retorna o mês atual se publicado, ou o mais recente. Para consultar um filme de um mês arquivado, inclua `inicio` e/ou `fim` desse mês.
+
+```bash
+curl 'http://localhost:3000/api/v1/programacao?inicio=2026-10-07&fim=2026-10-07'
+curl 'http://localhost:3000/api/v1/filmes/ran'
+curl 'http://localhost:3000/api/v1/calendario?filme=ran'
+```
+
+Respostas JSON: `{ "meta": {...}, "data": ... }`. `startsAt` inclui `-03:00`; `timezone` usa `America/Fortaleza`, zona IANA que inclui a Paraíba. Programas de curtas têm `filmId: null`. Preços ausentes são `null`, e não zero.
+
+`needsReview` e `warnings` indicam divergências pendentes; não são confirmações de cancelamento. O calendário marca essas sessões como `TENTATIVE`. `meta.validacaoSecundaria` registra fonte, momento da consulta e quantidade de horários coincidentes; não afirma que sejam confirmações independentes.
+
+Datas/intervalos inválidos retornam `400`; mês, filme ou sessão ausente retorna `404`; limite excedido retorna `429` e `Retry-After: 60`. O limite é de 120 consultas por minuto/IP na origem, compartilhado pelo banco. Sem banco ou durante falha dele, usa um contador por instância. Cache na CDN: até 300 segundos. CORS permite leitura em outros sites, sem login.
+
+## Google OAuth e painel
+
+O público não precisa de conta. `/admin` só permite contas Google verificadas e presentes em `ADMIN_EMAILS`.
+
+Configure:
+
+```dotenv
+AUTH_SECRET=<segredo aleatório forte>
+AUTH_GOOGLE_ID=<client ID Google>
+AUTH_GOOGLE_SECRET=<client secret Google>
+ADMIN_EMAILS=voce@example.com,outro@example.com
+```
+
+No Google Cloud, cadastre como redirect URI:
+
+```text
+http://localhost:3000/api/auth/callback/google
+https://<seu-dominio>/api/auth/callback/google
+```
+
+A integração usa Auth.js v5 (`next-auth` beta, versão exata no lockfile), sessão JWT com duração de 8h e proteção de escritas por sessão + lista de administradores + origem da requisição. Sem credenciais, o painel exibe instruções e as escritas ficam bloqueadas. OAuth real ainda exige validação com uma conta autorizada depois da configuração.
+
+O painel permite importar, confirmar a grade diária com justificativa e corrigir data/horário de uma sessão existente. Não permite cadastrar filmes ou sessões livres.
+
+## TMDb
+
+`TMDB_READ_TOKEN` é opcional e fica apenas no servidor. O coletor só associa um cartaz quando encontra um único candidato com título compatível, diretor correspondente e ano próximo ao informado pela FUNESC. Ele não troca a sinopse/classificação oficial e não cria filmes. Falha no TMDb não impede publicar a programação.
+
+Sem token, a interface usa capas tipográficas, não cartazes inventados. Se ativar cartazes, siga os requisitos de uso/atribuição do TMDb.
+
+## Vercel e domínio
+
+Framework: Next.js. Build: `npm run build`. Não é preciso configurar um diretório de saída personalizado.
+
+1. Configure o Turso da produção e rode `npm run db:migrate` com as variáveis desse ambiente.
+2. Configure as variáveis do banco, Google OAuth (se quiser ativar o painel), `AUTH_SECRET`, `ADMIN_EMAILS` e `CRON_SECRET` na Vercel.
+3. Ajuste `NEXT_PUBLIC_SITE_URL` para o domínio da publicação.
+4. Configure `AUTH_URL` se necessário em um domínio/proxy personalizado, conforme a documentação do Auth.js; não habilite confiança em hosts arbitrários.
+5. Faça uma importação e verifique o conteúdo da API.
+
+`vercel.json` agenda a coleta às **09:15 UTC / 06:15 em João Pessoa**, uma vez por dia. A Vercel chama `/api/cron` com `Authorization: Bearer <CRON_SECRET>`. Sem segredo, o endpoint recusa a requisição. Um erro de coleta fica no histórico e retorna HTTP 502; os dados anteriores continuam publicados.
+
+Cloudflare é opcional para domínio/DNS. Inicialmente, use o registro do site em modo DNS-only e a CDN da Vercel para cache. Nada foi provisionado em contas externas nem publicado por esta implementação.
+
+## Verificação
+
+```bash
+npm test
+npm run typecheck
+npm run build
+```
+
+Os testes verificam a fonte real capturada, escopo exclusivo do cinema, divergências, sessões especiais, validação de datas, persistência/revisões e calendário.
+
+Com o servidor local e banco importado, rode os testes de navegador:
+
+```bash
+npm run test:browser
+```
+
+O Playwright usa `/usr/bin/google-chrome` quando disponível, ou Chromium instalado pelo Playwright. Em outro ambiente:
+
+```bash
+npx playwright install chromium
+```
+
+Cobertura: API → banco → resposta, filtros e navegação em desktop/celular, ausência de overflow horizontal, dias sem sessão, exportação de calendário e bloqueio de escritas não autorizadas. O login real do Google e o Turso remoto dependem de credenciais e não são substituídos por testes locais.

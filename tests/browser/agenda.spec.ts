@@ -1,0 +1,43 @@
+import { test, expect } from '@playwright/test';
+test('public API returns only Cine Bangüê sessions, validates ranges and exports iCalendar',async({request})=>{
+  const response=await request.get('/api/v1/programacao?inicio=2026-10-07&fim=2026-10-07');
+  expect(response.status()).toBe(200);expect(response.headers()['access-control-allow-origin']).toBe('*');
+  const {data,meta}=await response.json();expect(meta.cinema).toBe('Cine Bangüê');expect(meta.armazenamento).toBe('turso');expect(data.sessions).toHaveLength(3);
+  expect(data.sessions.every((s:{venue:string})=>s.venue==='Cine Bangüê')).toBeTruthy();
+  const session=await request.get(`/api/v1/sessoes/${data.sessions[0].id}`);expect(session.status()).toBe(200);
+  expect((await session.json()).data.title).toBe('RAN');
+  const film=await request.get('/api/v1/filmes/ran');expect(film.status()).toBe(200);expect((await film.json()).data.sessions.length).toBeGreaterThan(0);
+  expect((await request.get('/api/v1/programacao?inicio=2026-02-30')).status()).toBe(400);
+  expect((await request.get('/api/v1/programacao?inicio=2026-11-01')).status()).toBe(404);
+  const closed=await request.get('/api/v1/programacao?inicio=2026-10-03&fim=2026-10-03');expect((await closed.json()).data.noSessionDates).toEqual(['2026-10-03']);
+  const ics=await request.get('/api/v1/calendario?filme=ran');expect(ics.headers()['content-type']).toContain('text/calendar');expect(await ics.text()).toContain('BEGIN:VCALENDAR');
+  expect((await request.get('/api/cron')).status()).toBe(401);
+  expect((await request.post('/api/admin/importar')).status()).toBe(403);
+  expect((await request.post('/api/admin/revisar',{data:{}})).status()).toBe(403);
+  expect((await request.post('/api/admin/corrigir',{data:{}})).status()).toBe(403);
+});
+test('desktop navigation fetches sessions, handles closed days and shows only scheduled films',async({page})=>{
+  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.setViewportSize({width:1440,height:1100});await page.goto('/?data=2026-10-07');
+  await expect(page.locator('.session-card')).toHaveCount(3);
+  await expect(page.locator('.session-card').first()).toContainText('RAN');
+  await page.screenshot({path:'/tmp/bangue-desktop.png',fullPage:true});
+  await page.getByRole('button',{name:'sábado, 3 de outubro, 0 sessões',exact:true}).click();
+  await expect(page.getByRole('heading',{name:'Hoje a tela descansa.'})).toBeVisible();
+  await page.getByRole('button',{name:'sexta-feira, 16 de outubro, 3 sessões',exact:true}).click();
+  await expect(page.locator('.session-card')).toHaveCount(3);
+  await page.getByLabel('Acessíveis',{exact:true}).check();await expect(page.locator('.session-card')).toHaveCount(1);
+  await expect(page.locator('.session-card')).toContainText('CORDELINA');
+  await page.getByRole('button',{name:'Filmes do mês',exact:true}).click();await expect(page.locator('.film-tile')).toHaveCount(12);
+  await page.locator('.film-tile').filter({hasText:'RAN'}).click();await expect(page.getByRole('heading',{name:'RAN',exact:true})).toBeVisible();
+  await expect(page.locator('.film-session')).toHaveCount(10);
+  expect(errors).toEqual([]);
+});
+test('mobile has no horizontal page overflow, usable dates and API documentation',async({page})=>{
+  await page.setViewportSize({width:390,height:844});await page.goto('/?data=2026-10-07');
+  await expect(page.locator('.session-card')).toHaveCount(3);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBeTruthy();
+  await page.screenshot({path:'/tmp/bangue-mobile.png',fullPage:true});
+  await page.getByRole('link',{name:'API aberta'}).click();await expect(page.getByRole('heading',{name:'Consultas',exact:true})).toBeVisible();
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBeTruthy();
+});
