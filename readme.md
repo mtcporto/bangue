@@ -140,7 +140,7 @@ Framework: Next.js. Build: `npm run build`. Não é preciso configurar um diret�
 
 `vercel.json` agenda a coleta às **09:15 UTC / 06:15 em João Pessoa**, uma vez por dia. A Vercel chama `/api/cron` com `Authorization: Bearer <CRON_SECRET>`. Sem segredo, o endpoint recusa a requisição. Um erro de coleta fica no histórico e retorna HTTP 502; os dados anteriores continuam publicados.
 
-Cloudflare é opcional para domínio/DNS. Inicialmente, use o registro do site em modo DNS-only e a CDN da Vercel para cache. A produção usa o projeto Vercel `bangue` e o banco Turso `bangue`. Google OAuth será cadastrado no projeto existente `umbrella-mtcporto`.
+Cloudflare é opcional para domínio/DNS. Inicialmente, use o registro do site em modo DNS-only e a CDN da Vercel para cache. A produção usa o projeto Vercel `bangue` e o banco Turso `bangue`. Google OAuth usa o cliente Web **Bangüê** no projeto existente `umbrella-mtcporto`, com callbacks para `http://localhost:3000/api/auth/callback/google` e `https://bangue.vercel.app/api/auth/callback/google`. As credenciais ficam nas variáveis de ambiente; arquivos OAuth baixados são ignorados pelo Git.
 
 ## Verificação
 
