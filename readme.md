@@ -118,7 +118,7 @@ http://localhost:3000/api/auth/callback/google
 https://<seu-dominio>/api/auth/callback/google
 ```
 
-A integração usa Auth.js v5 (`next-auth` beta, versão exata no lockfile), sessão JWT com duração de 8h e proteção de escritas por sessão + lista de administradores + origem da requisição. Sem credenciais, o painel exibe instruções e as escritas ficam bloqueadas. OAuth real ainda exige validação com uma conta autorizada depois da configuração.
+A integração usa Auth.js v5 (`next-auth` beta, versão exata no lockfile), sessão JWT com duração de 8h e proteção de escritas por sessão + lista de administradores + origem da requisição. Sem credenciais, o painel exibe instruções e as escritas ficam bloqueadas. Login Google validado localmente e em produção com a conta autorizada em 7 de outubro de 2026.
 
 O painel permite importar, confirmar a grade diária com justificativa e corrigir data/horário de uma sessão existente. Não permite cadastrar filmes ou sessões livres.
 
@@ -164,7 +164,7 @@ O Playwright usa `/usr/bin/google-chrome` quando disponível, ou Chromium instal
 npx playwright install chromium
 ```
 
-Cobertura: API → banco → resposta, filtros e navegação em desktop/celular, ausência de overflow horizontal, dias sem sessão, exportação de calendário e bloqueio de escritas não autorizadas. O login real do Google exige validação com a conta autorizada após a configuração do cliente OAuth.
+Cobertura: API → banco → resposta, filtros e navegação em desktop/celular, ausência de overflow horizontal, dias sem sessão, exportação de calendário e bloqueio de escritas não autorizadas. O login Google foi verificado de ponta a ponta em localhost e `bangue.vercel.app`, incluindo retorno OAuth, sessão administrativa e leitura das 89 sessões.
 
 ## Acesso por agentes
 
