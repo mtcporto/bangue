@@ -126,7 +126,7 @@ O painel permite importar, confirmar a grade diária com justificativa e corrigi
 
 `TMDB_READ_TOKEN` ou `TMDB_API_KEY` são opcionais e ficam apenas no servidor. O coletor só associa um cartaz quando encontra um único candidato com título compatível, diretor correspondente e ano próximo ao informado pela FUNESC. Ele não troca a sinopse/classificação oficial e não cria filmes. Falha no TMDb não impede publicar a programação.
 
-O snapshot inclui cartazes para os 12 filmes e imagens horizontais para 10 deles. Programas de curtas usam capa tipográfica quando não há imagem da própria mostra. A atribuição ao TMDb aparece no rodapé.
+O snapshot inclui cartazes para os 12 filmes e imagens horizontais para 10 deles. Programas de curtas usam capa tipográfica quando não há imagem da própria mostra. A atribuição ao TMDb aparece no rodapé. Trailers oficiais são obtidos pelo ID do filme já confirmado no TMDb, com preferência por português. Lacunas são complementadas por vídeos conferidos nos canais das distribuidoras, vinculados ao mesmo título, diretor e ID. O player só é carregado ao clicar; a programação e as fichas incluem links diretos ao YouTube.
 
 ## Vercel e domínio
 

@@ -5,7 +5,7 @@
   "period": "2026-10",
   "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
   "pdfUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/a3-outubro-2026.pdf/view",
-  "fetchedAt": "2026-10-07T04:28:28.916Z",
+  "fetchedAt": "2026-10-07T05:09:20.535Z",
   "sourceHash": "07fb7ad1e46e8fc0bb32db281524f5ea5d613eeffdc1777ab17463bcef7ada59",
   "films": [
     {
@@ -21,7 +21,14 @@
       "poster": "https://image.tmdb.org/t/p/w500/v9wSMFf9Ysj40aHHUJ1VeLStZWn.jpg",
       "tmdbId": 1419806,
       "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
-      "backdrop": "https://image.tmdb.org/t/p/w1280/x4SK7QQPUjDCi9Q95PCR5Ckpip1.jpg"
+      "backdrop": "https://image.tmdb.org/t/p/w1280/x4SK7QQPUjDCi9Q95PCR5Ckpip1.jpg",
+      "trailer": {
+        "youtubeId": "TMA2GYoGqGE",
+        "url": "https://www.youtube.com/watch?v=TMA2GYoGqGE",
+        "title": "VIRTUOSAS | Trailer Oficial — Olhar Filmes",
+        "language": "pt",
+        "sourceUrl": "https://www.youtube.com/watch?v=TMA2GYoGqGE"
+      }
     },
     {
       "id": "cordelina",
@@ -51,7 +58,14 @@
       "poster": "https://image.tmdb.org/t/p/w500/67BhaYjKeMVZfzCQD22iweDcCov.jpg",
       "tmdbId": 1235304,
       "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
-      "backdrop": "https://image.tmdb.org/t/p/w1280/b28RiKlALbdC2Dmnndt93MBt76h.jpg"
+      "backdrop": "https://image.tmdb.org/t/p/w1280/b28RiKlALbdC2Dmnndt93MBt76h.jpg",
+      "trailer": {
+        "youtubeId": "gbHXY76EqU8",
+        "url": "https://www.youtube.com/watch?v=gbHXY76EqU8",
+        "title": "Trailer legendado",
+        "language": "pt",
+        "sourceUrl": "https://www.themoviedb.org/movie/1235304/videos"
+      }
     },
     {
       "id": "morte-e-vida-madalena",
@@ -66,7 +80,14 @@
       "poster": "https://image.tmdb.org/t/p/w500/2q6PV1Dl6htx5fqwPXcOwTTahcx.jpg",
       "tmdbId": 1480321,
       "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
-      "backdrop": "https://image.tmdb.org/t/p/w1280/1DlC1Enn7wGG3B99m3fB66r53r1.jpg"
+      "backdrop": "https://image.tmdb.org/t/p/w1280/1DlC1Enn7wGG3B99m3fB66r53r1.jpg",
+      "trailer": {
+        "youtubeId": "TW6DnXaM11E",
+        "url": "https://www.youtube.com/watch?v=TW6DnXaM11E",
+        "title": "Trailer oficial",
+        "language": "pt",
+        "sourceUrl": "https://www.themoviedb.org/movie/1480321/videos"
+      }
     },
     {
       "id": "mirrors-n3",
@@ -81,7 +102,14 @@
       "poster": "https://image.tmdb.org/t/p/w500/41P4T0D1i7xbVAnIGplsacP5Uim.jpg",
       "tmdbId": 1178602,
       "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
-      "backdrop": "https://image.tmdb.org/t/p/w1280/sBmk1aaiepcBfC3l5NpEsdEoawP.jpg"
+      "backdrop": "https://image.tmdb.org/t/p/w1280/sBmk1aaiepcBfC3l5NpEsdEoawP.jpg",
+      "trailer": {
+        "youtubeId": "8nIi2ecQqtE",
+        "url": "https://www.youtube.com/watch?v=8nIi2ecQqtE",
+        "title": "Trailer Oficial",
+        "language": "pt",
+        "sourceUrl": "https://www.themoviedb.org/movie/1178602/videos"
+      }
     },
     {
       "id": "akira",
@@ -96,7 +124,14 @@
       "poster": "https://image.tmdb.org/t/p/w500/tbwwTQ3EqSdotbQ3ZcIl6vKBv7q.jpg",
       "tmdbId": 149,
       "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
-      "backdrop": "https://image.tmdb.org/t/p/w1280/fK40VGYIm7hmKrLJ26fgPQU0qRG.jpg"
+      "backdrop": "https://image.tmdb.org/t/p/w1280/fK40VGYIm7hmKrLJ26fgPQU0qRG.jpg",
+      "trailer": {
+        "youtubeId": "fLj6skgJ0OY",
+        "url": "https://www.youtube.com/watch?v=fLj6skgJ0OY",
+        "title": "AKIRA | por Sato Company",
+        "language": "pt",
+        "sourceUrl": "https://www.themoviedb.org/movie/149/videos"
+      }
     },
     {
       "id": "papaya",
@@ -111,7 +146,14 @@
       "poster": "https://image.tmdb.org/t/p/w500/uQWkEjprUXFk4LeJFAVROPk45lH.jpg",
       "tmdbId": 1534205,
       "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
-      "backdrop": "https://image.tmdb.org/t/p/w1280/vB6k4sY7n2lVMtr88EHdBaYa36I.jpg"
+      "backdrop": "https://image.tmdb.org/t/p/w1280/vB6k4sY7n2lVMtr88EHdBaYa36I.jpg",
+      "trailer": {
+        "youtubeId": "bPNe_cyKMYo",
+        "url": "https://www.youtube.com/watch?v=bPNe_cyKMYo",
+        "title": "Papaya — Official Trailer",
+        "language": "en",
+        "sourceUrl": "https://bestfriendforever.be/films/papaya/"
+      }
     },
     {
       "id": "ran",
@@ -126,7 +168,14 @@
       "poster": "https://image.tmdb.org/t/p/w500/gWw6iyVEoWtYLRNeyS9nv6sgXlx.jpg",
       "tmdbId": 11645,
       "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
-      "backdrop": "https://image.tmdb.org/t/p/w1280/3ssNAWypRl47iriwBFNx7RUEUub.jpg"
+      "backdrop": "https://image.tmdb.org/t/p/w1280/3ssNAWypRl47iriwBFNx7RUEUub.jpg",
+      "trailer": {
+        "youtubeId": "n3NHXTYY2HI",
+        "url": "https://www.youtube.com/watch?v=n3NHXTYY2HI",
+        "title": "RAN — 40th Anniversary Official Trailer | STUDIOCANAL",
+        "language": "en",
+        "sourceUrl": "https://www.youtube.com/watch?v=n3NHXTYY2HI"
+      }
     },
     {
       "id": "amelia-toledo-lembrar-de-nao-esquecer",
@@ -141,7 +190,14 @@
       "poster": "https://image.tmdb.org/t/p/w500/gkY0eQkK7LlaTFdzmlBlu1KeO5h.jpg",
       "tmdbId": 1571577,
       "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
-      "backdrop": null
+      "backdrop": null,
+      "trailer": {
+        "youtubeId": "dvT5ebgujZ0",
+        "url": "https://www.youtube.com/watch?v=dvT5ebgujZ0",
+        "title": "TRAILER",
+        "language": "pt",
+        "sourceUrl": "https://www.themoviedb.org/movie/1571577/videos"
+      }
     },
     {
       "id": "rosebush-pruning",
@@ -156,7 +212,14 @@
       "poster": "https://image.tmdb.org/t/p/w500/uor0DM9RAc0ZwJXT4wrT8XAvsKL.jpg",
       "tmdbId": 1130948,
       "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
-      "backdrop": "https://image.tmdb.org/t/p/w1280/vcZ3UUVmFNk90DBSrTBlTKCdbbE.jpg"
+      "backdrop": "https://image.tmdb.org/t/p/w1280/vcZ3UUVmFNk90DBSrTBlTKCdbbE.jpg",
+      "trailer": {
+        "youtubeId": "rmHD9gZbF7A",
+        "url": "https://www.youtube.com/watch?v=rmHD9gZbF7A",
+        "title": "Official Trailer",
+        "language": "en",
+        "sourceUrl": "https://www.themoviedb.org/movie/1130948/videos"
+      }
     },
     {
       "id": "ao-sabor-das-cinzas",
@@ -186,7 +249,14 @@
       "poster": "https://image.tmdb.org/t/p/w500/kYw62IF023miZMKyiAqX4mYat3a.jpg",
       "tmdbId": 1510325,
       "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
-      "backdrop": "https://image.tmdb.org/t/p/w1280/ccQ9abrYHA0aDmaZGqZ1zDaaUem.jpg"
+      "backdrop": "https://image.tmdb.org/t/p/w1280/ccQ9abrYHA0aDmaZGqZ1zDaaUem.jpg",
+      "trailer": {
+        "youtubeId": "fs_1C84-M3o",
+        "url": "https://www.youtube.com/watch?v=fs_1C84-M3o",
+        "title": "Meu Verão na Sicília — Pandora Filmes",
+        "language": "pt",
+        "sourceUrl": "https://www.youtube.com/watch?v=fs_1C84-M3o"
+      }
     }
   ],
   "sessions": [
@@ -2320,7 +2390,7 @@
       "name": "Obrigado, Cinema!",
       "url": "https://renatofelix.wordpress.com/programacao-dos-cinemas-na-paraiba/",
       "status": "fulfilled",
-      "checkedAt": "2026-10-07T04:28:29.620Z",
+      "checkedAt": "2026-10-07T05:09:21.010Z",
       "observations": 60,
       "matched": 60
     }

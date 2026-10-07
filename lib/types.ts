@@ -7,6 +7,7 @@ export type Film = {
   duration: number | null; rating: string | null; synopsis: string | null;
   country: string | null; genre: string | null; poster: string | null;
   backdrop?: string | null; tmdbId: number | null; sourceUrl: string;
+  trailer?: { youtubeId: string; url: string; title: string; language: string; sourceUrl: string } | null;
 };
 export type Session = {
   id: string; venue: typeof VENUE; date: string; time: string; startsAt: string;

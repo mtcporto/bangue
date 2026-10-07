@@ -70,3 +70,10 @@ test('film artwork matching tolerates known title subtitles and a one-letter dir
   assert.equal(compatibleTitle('AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER','Amélia Toledo'),true);
   assert.equal(compatibleTitle('RAN','Akira'),false);
 });
+test('trailers require the matched film video, official YouTube trailer and a valid key',async()=>{
+  const {selectTrailer}=await import('../lib/tmdb');
+  const en={key:'abcdefghijk',site:'YouTube',type:'Trailer',official:true,name:'Trailer',iso_639_1:'en'};
+  const pt={...en,key:'12345678901',iso_639_1:'pt'};
+  assert.equal(selectTrailer([en,pt])?.key,pt.key);
+  assert.equal(selectTrailer([{...en,official:false},{...en,type:'Teaser'},{...en,key:'../invalid'},{...en,site:'Vimeo'}]),undefined);
+});

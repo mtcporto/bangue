@@ -34,7 +34,7 @@ test('desktop navigation fetches sessions, handles closed days and shows only sc
   await page.getByLabel('Acessíveis',{exact:true}).check();await expect(page.locator('.session-card')).toHaveCount(1);
   await expect(page.locator('.session-card')).toContainText('CORDELINA');
   await page.getByRole('button',{name:'Filmes do mês',exact:true}).click();await expect(page.locator('.film-tile')).toHaveCount(12);await expect(page.locator('.film-tile .poster img')).toHaveCount(12);
-  await page.locator('.film-tile').filter({hasText:'RAN'}).click();await expect(page.getByRole('heading',{name:'RAN',exact:true})).toBeVisible();
+  await page.locator('.film-tile').filter({hasText:'RAN'}).locator('.film-tile-main').click();await expect(page.getByRole('heading',{name:'RAN',exact:true})).toBeVisible();
   await expect(page.locator('.film-session')).toHaveCount(10);
   expect(errors).toEqual([]);
 });
@@ -44,5 +44,20 @@ test('mobile has no horizontal page overflow, usable dates and API documentation
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBeTruthy();
   await page.screenshot({path:'/tmp/bangue-mobile.png',fullPage:true});
   await page.getByRole('link',{name:'API aberta'}).click();await expect(page.getByRole('heading',{name:'Consultas REST',exact:true})).toBeVisible();
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBeTruthy();
+});
+
+test('trailers are linked from the agenda and load the player only on request',async({page,request})=>{
+  const response=await request.get('/api/v1/filmes/ran');const film=(await response.json()).data;
+  expect(film.trailer.url).toMatch(/^https:\/\/www.youtube.com\/watch\?v=/);
+  await page.goto('/?data=2026-10-07');
+  await expect(page.locator('.session-card').filter({hasText:'RAN'}).locator('.trailer-link')).toHaveAttribute('href',film.trailer.url);
+  await page.getByRole('button',{name:'Filmes do mês',exact:true}).click();
+  await expect(page.locator('.film-tile').filter({hasText:'RAN'}).locator('.trailer-link')).toHaveAttribute('href',film.trailer.url);
+  await page.goto('/filmes/ran');await expect(page.locator('#trailer iframe')).toHaveCount(0);
+  await page.route('https://www.youtube-nocookie.com/**',r=>r.fulfill({contentType:'text/html',body:'<html><body>Trailer</body></html>'}));
+  await page.getByRole('button',{name:'Reproduzir trailer de RAN',exact:true}).click();
+  await expect(page.locator('#trailer iframe')).toHaveAttribute('src',`https://www.youtube-nocookie.com/embed/${film.trailer.youtubeId}?autoplay=1&rel=0`);
+  await page.setViewportSize({width:390,height:844});
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBeTruthy();
 });
