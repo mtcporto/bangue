@@ -6,7 +6,7 @@ export type Film = {
   id: string; title: string; director: string | null; year: number | null;
   duration: number | null; rating: string | null; synopsis: string | null;
   country: string | null; genre: string | null; poster: string | null;
-  tmdbId: number | null; sourceUrl: string;
+  backdrop?: string | null; tmdbId: number | null; sourceUrl: string;
 };
 export type Session = {
   id: string; venue: typeof VENUE; date: string; time: string; startsAt: string;

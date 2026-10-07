@@ -63,3 +63,10 @@ test('calendar uses UTC timestamps, stable UIDs, and tentative disputed sessions
   const value=calendar(s,[session]);assert.ok(value.includes('DTSTART:20261007T183000Z'));assert.ok(value.includes(`UID:${session.id}@bangue.vercel.app`));assert.ok(value.includes('STATUS:TENTATIVE'));assert.ok(value.endsWith('END:VCALENDAR\r\n'));
   assert.ok(value.split('\r\n').every(line=>Buffer.byteLength(line)<=75));
 });
+test('film artwork matching tolerates known title subtitles and a one-letter director typo, not unrelated films',async()=>{
+  const {sameDirector,compatibleTitle}=await import('../lib/tmdb');
+  assert.equal(sameDirector('CÉDRICK KLAPISCH','Cédric Klapisch'),true);
+  assert.equal(sameDirector('AKIRA KUROSAWA','Kiyoshi Kurosawa'),false);
+  assert.equal(compatibleTitle('AMELIA TOLEDO — LEMBRAR DE NÃO ESQUECER','Amélia Toledo'),true);
+  assert.equal(compatibleTitle('RAN','Akira'),false);
+});

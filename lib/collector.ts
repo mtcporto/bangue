@@ -56,7 +56,7 @@ export async function importSchedule(actor: string) {
     validateReplacement(previous, result.schedule);
     for (const film of result.schedule.films) {
       const old = previous.films.find(f => f.id === film.id && f.director === film.director && f.year === film.year);
-      if (old) { film.tmdbId = old.tmdbId; film.poster = old.poster; }
+      if (old) { film.tmdbId = old.tmdbId; film.poster = old.poster; film.backdrop = old.backdrop; }
     }
     await enrichFilms(result.schedule);
     const id = await persistSchedule(result.schedule, result.html, actor);

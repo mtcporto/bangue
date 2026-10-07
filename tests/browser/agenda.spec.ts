@@ -21,6 +21,11 @@ test('desktop navigation fetches sessions, handles closed days and shows only sc
   await page.setViewportSize({width:1440,height:1100});await page.goto('/?data=2026-10-07');
   await expect(page.locator('.session-card')).toHaveCount(3);
   await expect(page.locator('.session-card').first()).toContainText('RAN');
+  await expect(page.locator('.cinema-banner img')).toBeVisible();
+  await expect(page.locator('.session-card .poster img')).toHaveCount(2);
+  await expect(page.locator('.cinema-banner img')).toHaveJSProperty('complete',true);
+  await page.getByRole('button',{name:'Próximo destaque',exact:true}).click();
+  await expect(page.locator('.cinema-banner h1')).toContainText('AS CORES DO TEMPO');
   await page.screenshot({path:'/tmp/bangue-desktop.png',fullPage:true});
   await page.getByRole('button',{name:'sábado, 3 de outubro, 0 sessões',exact:true}).click();
   await expect(page.getByRole('heading',{name:'Hoje a tela descansa.'})).toBeVisible();
@@ -28,7 +33,7 @@ test('desktop navigation fetches sessions, handles closed days and shows only sc
   await expect(page.locator('.session-card')).toHaveCount(3);
   await page.getByLabel('Acessíveis',{exact:true}).check();await expect(page.locator('.session-card')).toHaveCount(1);
   await expect(page.locator('.session-card')).toContainText('CORDELINA');
-  await page.getByRole('button',{name:'Filmes do mês',exact:true}).click();await expect(page.locator('.film-tile')).toHaveCount(12);
+  await page.getByRole('button',{name:'Filmes do mês',exact:true}).click();await expect(page.locator('.film-tile')).toHaveCount(12);await expect(page.locator('.film-tile .poster img')).toHaveCount(12);
   await page.locator('.film-tile').filter({hasText:'RAN'}).click();await expect(page.getByRole('heading',{name:'RAN',exact:true})).toBeVisible();
   await expect(page.locator('.film-session')).toHaveCount(10);
   expect(errors).toEqual([]);
@@ -38,6 +43,6 @@ test('mobile has no horizontal page overflow, usable dates and API documentation
   await expect(page.locator('.session-card')).toHaveCount(3);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBeTruthy();
   await page.screenshot({path:'/tmp/bangue-mobile.png',fullPage:true});
-  await page.getByRole('link',{name:'API aberta'}).click();await expect(page.getByRole('heading',{name:'Consultas',exact:true})).toBeVisible();
+  await page.getByRole('link',{name:'API aberta'}).click();await expect(page.getByRole('heading',{name:'Consultas REST',exact:true})).toBeVisible();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBeTruthy();
 });

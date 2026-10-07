@@ -124,9 +124,9 @@ O painel permite importar, confirmar a grade diária com justificativa e corrigi
 
 ## TMDb
 
-`TMDB_READ_TOKEN` é opcional e fica apenas no servidor. O coletor só associa um cartaz quando encontra um único candidato com título compatível, diretor correspondente e ano próximo ao informado pela FUNESC. Ele não troca a sinopse/classificação oficial e não cria filmes. Falha no TMDb não impede publicar a programação.
+`TMDB_READ_TOKEN` ou `TMDB_API_KEY` são opcionais e ficam apenas no servidor. O coletor só associa um cartaz quando encontra um único candidato com título compatível, diretor correspondente e ano próximo ao informado pela FUNESC. Ele não troca a sinopse/classificação oficial e não cria filmes. Falha no TMDb não impede publicar a programação.
 
-Sem token, a interface usa capas tipográficas, não cartazes inventados. Se ativar cartazes, siga os requisitos de uso/atribuição do TMDb.
+O snapshot inclui cartazes para os 12 filmes e imagens horizontais para 10 deles. Programas de curtas usam capa tipográfica quando não há imagem da própria mostra. A atribuição ao TMDb aparece no rodapé.
 
 ## Vercel e domínio
 
@@ -140,7 +140,7 @@ Framework: Next.js. Build: `npm run build`. Não é preciso configurar um diret�
 
 `vercel.json` agenda a coleta às **09:15 UTC / 06:15 em João Pessoa**, uma vez por dia. A Vercel chama `/api/cron` com `Authorization: Bearer <CRON_SECRET>`. Sem segredo, o endpoint recusa a requisição. Um erro de coleta fica no histórico e retorna HTTP 502; os dados anteriores continuam publicados.
 
-Cloudflare é opcional para domínio/DNS. Inicialmente, use o registro do site em modo DNS-only e a CDN da Vercel para cache. Nada foi provisionado em contas externas nem publicado por esta implementação.
+Cloudflare é opcional para domínio/DNS. Inicialmente, use o registro do site em modo DNS-only e a CDN da Vercel para cache. A produção usa o projeto Vercel `bangue` e o banco Turso `bangue`. Google OAuth será cadastrado no projeto existente `umbrella-mtcporto`.
 
 ## Verificação
 
@@ -164,4 +164,10 @@ O Playwright usa `/usr/bin/google-chrome` quando disponível, ou Chromium instal
 npx playwright install chromium
 ```
 
-Cobertura: API → banco → resposta, filtros e navegação em desktop/celular, ausência de overflow horizontal, dias sem sessão, exportação de calendário e bloqueio de escritas não autorizadas. O login real do Google e o Turso remoto dependem de credenciais e não são substituídos por testes locais.
+Cobertura: API → banco → resposta, filtros e navegação em desktop/celular, ausência de overflow horizontal, dias sem sessão, exportação de calendário e bloqueio de escritas não autorizadas. O login real do Google exige validação com a conta autorizada após a configuração do cliente OAuth.
+
+## Acesso por agentes
+
+MCP público e somente leitura em `https://bangue.vercel.app/mcp` (Streamable HTTP). Ferramentas: `consultar_programacao`, `listar_filmes`, `detalhar_filme` e `informacoes_cinema`. Recurso: `bangue://programacao`. Compatível com clientes atuais e protocolo 2025-03-26.
+
+Contrato OpenAPI em `/api/v1/openapi`, orientações em `/llms.txt` e exemplos em `/api-docs`. Cada resposta inclui origem, atualização e divergências; meses não publicados não são interpretados como ausência de sessões. Nenhuma ferramenta permite incluir filmes ou comprar ingressos.
