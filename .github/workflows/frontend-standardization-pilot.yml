@@ -1,0 +1,40 @@
+name: Frontend standardization pilot
+
+on:
+  push:
+    branches:
+      - chore/standardize-frontend-2026-10
+
+permissions:
+  contents: write
+
+jobs:
+  migrate-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Update dependencies and lockfile
+        run: |
+          npm install --save-exact react@19.3.0 react-dom@19.3.0 next@16.4.2
+          npm install --save-dev --save-exact typescript@6.0.3
+      - name: Commit regenerated manifest and lockfile
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json package-lock.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(deps): align React Next and TypeScript and refresh lockfile"
+            git push
+          fi
+      - name: Typecheck
+        run: npm run typecheck --if-present
+      - name: Tests
+        run: npm test --if-present
+      - name: Build
+        run: npm run build
