@@ -6,13 +6,22 @@ import { getDb } from './db';
 import { randomUUID } from 'node:crypto';
 import { SECONDARY_SOURCES, parseSecondary, compareSecondary } from './secondary';
 import { enrichFilms } from './tmdb';
-export async function fetchHtml(url: string) {
-  const response = await fetch(url, { signal: AbortSignal.timeout(25000), cache: 'no-store', headers: { 'User-Agent': 'Bangue/2.0 (+https://bangue.vercel.app/api-docs)' } });
-  if (!response.ok) throw new Error(`Fonte respondeu HTTP ${response.status}`);
-  if (!response.headers.get('content-type')?.includes('text/html')) throw new Error('Fonte não retornou HTML.');
-  const html = await response.text();
-  if (html.length > 3_000_000) throw new Error('Resposta da fonte excede o limite.');
-  return html;
+export async function fetchHtml(url: string, retries = 2): Promise<string> {
+  let lastError: unknown;
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const response = await fetch(url, { signal: AbortSignal.timeout(25000), cache: 'no-store', headers: { 'User-Agent': 'Bangue/2.0 (+https://bangue.vercel.app/api-docs)' } });
+      if (!response.ok) throw new Error(`Fonte respondeu HTTP ${response.status}`);
+      if (!response.headers.get('content-type')?.includes('text/html')) throw new Error('Fonte não retornou HTML.');
+      const html = await response.text();
+      if (html.length > 3_000_000) throw new Error('Resposta da fonte excede o limite.');
+      return html;
+    } catch (err) {
+      lastError = err;
+      if (attempt < retries) await new Promise(r => setTimeout(r, 1000 * (attempt + 1)));
+    }
+  }
+  throw lastError instanceof Error ? lastError : new Error(String(lastError));
 }
 export async function collectFunesc() {
   const index = await fetchHtml(OFFICIAL_INDEX);

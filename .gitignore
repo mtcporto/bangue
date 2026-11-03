@@ -9,3 +9,4 @@ playwright-report/
 
 # Downloaded Google OAuth credentials
 .oauth-google.json
+.vercel

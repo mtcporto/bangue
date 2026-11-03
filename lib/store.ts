@@ -7,9 +7,12 @@ export type StoredSchedule = { schedule: Schedule; storage: 'turso' | 'snapshot'
 export async function readSchedule(period?: string): Promise<StoredSchedule> {
   if (databaseConfigured()) {
     try {
-      const result = period
-        ? await getDb().execute({ sql: 'SELECT payload FROM schedules WHERE period = ?', args: [period] })
-        : await getDb().execute({ sql: `SELECT payload FROM schedules ORDER BY CASE WHEN period = ? THEN 0 ELSE 1 END, period DESC LIMIT 1`, args: [today().slice(0, 7)] });
+      const currentPeriod = today().slice(0, 7);
+      const targetPeriod = period || currentPeriod;
+      const result = await getDb().execute({
+        sql: 'SELECT payload FROM schedules WHERE period = ?',
+        args: [targetPeriod]
+      });
       if (result.rows[0]) {
         const schedule = JSON.parse(String(result.rows[0].payload)) as Schedule;
         const corrections = await getDb().execute({ sql: 'SELECT session_id, payload FROM corrections WHERE source_hash = ?', args: [schedule.sourceHash] });
@@ -24,6 +27,19 @@ export async function readSchedule(period?: string): Promise<StoredSchedule> {
         }
         for (const session of schedule.sessions) session.needsReview = schedule.issues.some(i => !i.resolved && i.sessionIds.includes(session.id));
         schedule.sessions.sort((a,b) => a.startsAt.localeCompare(b.startsAt));
+        return { schedule, storage: 'turso', degraded: false };
+      }
+      if (seed.period === targetPeriod) {
+        try {
+          await persistSchedule(seed as unknown as Schedule, '', 'seed-sync');
+          return { schedule: structuredClone(seed) as Schedule, storage: 'turso', degraded: false };
+        } catch {
+          return snapshot(period, true);
+        }
+      }
+      const latest = await getDb().execute({ sql: 'SELECT payload FROM schedules ORDER BY period DESC LIMIT 1' });
+      if (latest.rows[0]) {
+        const schedule = JSON.parse(String(latest.rows[0].payload)) as Schedule;
         return { schedule, storage: 'turso', degraded: false };
       }
     } catch (error) { console.error('schedule_read_failed', error instanceof Error ? error.message : 'unknown'); return snapshot(period, true); }
