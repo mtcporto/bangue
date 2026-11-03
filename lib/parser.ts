@@ -19,7 +19,7 @@ export function parseFunesc(html: string, fetchedAt = new Date().toISOString(), 
   content.find("br").replaceWith("\n");
   const nodes = content.find("h1,h2,h3,p").toArray().map(el => ({ tag: el.tagName, lines: $(el).text().split(/\n/).map(s => s.replace(/\s+/g, " ").trim()).filter(Boolean) }));
   const text = normalize(content.text());
-  const heading = text.match(/CINE BANGUE\s+(\w+)\s+DE\s+(20\d{2})/);
+  const heading = text.match(/(?:CINE BANGUE|PROGRAMACAO)\s+(?:[—–-]\s*)?(\w+)\s+DE\s+(20\d{2})/);
   if (!heading || !months.includes(heading[1])) throw new Error("Cinema ou mês de referência não identificado.");
   const period = `${heading[2]}-${String(months.indexOf(heading[1]) + 1).padStart(2, "0")}`;
   const sessions: Session[] = [], films: Film[] = [], issues: Issue[] = [], noSessionDates: string[] = [];
@@ -35,15 +35,15 @@ export function parseFunesc(html: string, fetchedAt = new Date().toISOString(), 
     if (/^PÁGINA\s*1\s*[—–-]\s*PROGRAMAÇÃO/i.test(joined)) { inGrid = true; continue; }
     if (inGrid && /^PÁGINA\s*\d/i.test(joined)) break;
     if (!inGrid) continue;
-    const day = joined.match(/^(\d{2})\/(\d{2})\s*[—–-]/);
+    const day = joined.match(/^(\d{2})(?:\/(\d{2}))?\s*[—–-]/);
     if (day) {
-      date = `${heading[2]}-${day[2]}-${day[1]}`;
+      date = day[2] ? `${heading[2]}-${day[2]}-${day[1]}` : `${period}-${day[1]}`;
       if (!validDate(date) || !date.startsWith(period)) throw new Error(`Data inválida na grade: ${joined}`);
       continue;
     }
     if (!date) continue;
     for (const line of node.lines) {
-      if (/^SEM SESSÃO$/i.test(line)) {
+      if (/^[-—–\s]*SEM SESSÃO$/i.test(line)) {
         const ids = sessions.filter(s => s.date === date).map(s => s.id);
         if (ids.length) issue("ambiguous_closed_day", `“Sem sessão” após horários de ${date}; horários mantidos para revisão.`, ids);
         else if (!noSessionDates.includes(date)) noSessionDates.push(date);
@@ -75,24 +75,32 @@ export function parseFunesc(html: string, fetchedAt = new Date().toISOString(), 
   for (const filmId of [...new Set(sessions.map(s => s.filmId).filter((id): id is string => !!id))]) {
     const title = sessions.find(s => s.filmId === filmId)!.title;
     const blocks = nodes.flatMap((node, i) => {
-      if (node.tag !== "h2" || normalize(node.lines.join(" ")) !== normalize(title)) return [];
+      if (!["h2", "h3"].includes(node.tag) || normalize(node.lines.join(" ")) !== normalize(title)) return [];
+      const stopTags = node.tag === "h2" ? ["h1", "h2"] : ["h1", "h2", "h3"];
       const lines: string[] = [];
-      for (let j = i + 1; j < nodes.length && !["h1", "h2"].includes(nodes[j].tag); j++) lines.push(...nodes[j].lines);
+      for (let j = i + 1; j < nodes.length && !stopTags.includes(nodes[j].tag); j++) lines.push(...nodes[j].lines);
       return [lines];
     });
     const lines = blocks[0] || [];
     const spec = lines.find(l => /,\s*\d{4},\s*\d+[’'′]/.test(l));
     const details = spec?.match(/^(.+),\s*(\d{4}),\s*(\d+)[’'′]/);
+    const genreMatch = blocks.flat().map(l => {
+      const m1 = l.match(/G[êe]nero:\s*([A-Za-zÀ-ÿ]+)/i);
+      if (m1) return m1[1].toUpperCase();
+      const m2 = l.match(/^(DRAMA|AÇÃO|FICÇÃO|DOCUMENTÁRIO|ANIMAÇÃO|COMÉDIA|TERROR)$/i);
+      if (m2) return m2[1].toUpperCase();
+      return null;
+    }).find(Boolean) || null;
     films.push({ id: filmId, title, director: lines.find(l => /^DIREÇÃO:/i.test(l))?.replace(/^DIREÇÃO:\s*/i, "") || null,
       year: details ? Number(details[2]) : null, duration: details ? Number(details[3]) : null,
-      country: details?.[1] || null, rating: lines.find(l => /^CLASSIFICAÇÃO INDICATIVA:/i.test(l))?.replace(/^CLASSIFICAÇÃO INDICATIVA:\s*/i, "") || null,
+      country: details?.[1] || null, rating: lines.find(l => /^CLASSIFICAÇÃO INDICATIVA:/i.test(l))?.replace(/^CLASSIFICAÇÃO INDICATIVA:\s*/i, "")?.replace(/\.$/, "") || null,
       synopsis: lines.find(l => l.length > 100 && !/^DIREÇÃO|^CLASSIFICAÇÃO/i.test(l)) || null,
-      genre: blocks.flat().find(l => /^(DRAMA|AÇÃO|FICÇÃO|DOCUMENTÁRIO|ANIMAÇÃO|COMÉDIA|TERROR)$/i.test(l)) || null,
+      genre: genreMatch,
       poster: null, tmdbId: null, sourceUrl
     });
     for (const block of blocks) {
       const listed = block.flatMap(line => {
-        const m = line.match(/^(\d{2})\s+[A-ZÇ]{3}\s*[—–-]\s*(\d{1,2})H(\d{2})?$/i);
+        const m = line.match(/^(\d{2})(?:\s+[A-ZÇ]{3}|\s*[—–-]\s*[A-ZÇÁÀÃÂÉÊÍÓÔÕÚa-zçáàãâéêíóôõú]+)\s*[—–-]\s*(\d{1,2})[Hh:](\d{2})?$/i);
         return m ? [`${period}-${m[1]} ${m[2].padStart(2, "0")}:${m[3] || "00"}`] : [];
       });
       const grid = sessions.filter(s => s.filmId === filmId);

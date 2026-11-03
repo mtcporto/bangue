@@ -77,3 +77,19 @@ test('trailers require the matched film video, official YouTube trailer and a va
   assert.equal(selectTrailer([en,pt])?.key,pt.key);
   assert.equal(selectTrailer([{...en,official:false},{...en,type:'Teaser'},{...en,key:'../invalid'},{...en,site:'Vimeo'}]),undefined);
 });
+test('extracts the complete official November grid and scheduled films',()=>{
+  const novHtml=readFileSync('data/sources/funesc-2026-11.html','utf8');
+  const s=parseFunesc(novHtml,'2026-11-01T12:00:00Z');
+  assert.equal(s.period,'2026-11');
+  assert.equal(s.sessions.length,79);
+  assert.equal(s.films.length,30);
+  assert.equal(new Set([...s.sessions.map(x=>x.date),...s.noSessionDates]).size,30);
+  assert.ok(s.sessions.every(x=>x.venue==='Cine Bangüê'&&x.startsAt.endsWith('-03:00')));
+  assert.deepEqual(s.noSessionDates,['2026-11-02','2026-11-09','2026-11-16','2026-11-23','2026-11-30']);
+  assert.deepEqual(s.sessions.filter(x=>x.date==='2026-11-01').map(x=>[x.time,x.title]),[
+    ['15:00','Ao Sabor das Cinzas'],
+    ['16:40','As Dores do Mundo – Hyldon'],
+    ['18:20','A Ilustre Desconhecida'],
+    ['20:20','Meu Verão na Sicília']
+  ]);
+});

@@ -4,7 +4,8 @@ async function main() {
   if (process.argv.includes('--snapshot')) {
     const { readFile, writeFile } = await import('node:fs/promises');
     const { parseFunesc } = await import('../lib/parser');
-    const schedule = parseFunesc(await readFile('data/sources/funesc-2026-10.html', 'utf8'));
+    const sourceFile = process.argv[3] || 'data/sources/funesc-2026-11.html';
+    const schedule = parseFunesc(await readFile(sourceFile, 'utf8'));
     await writeFile('data/schedule.json', JSON.stringify(schedule, null, 2) + '\n');
     console.log(`${schedule.sessions.length} sessões, ${schedule.films.length} filmes, ${schedule.issues.length} divergências.`);
     return;
