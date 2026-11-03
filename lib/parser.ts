@@ -12,6 +12,20 @@ const digest = (s: string) => createHash("sha256").update(s).digest("hex");
 function sessionTitle(raw: string) {
   return raw.replace(/\s*\(\+\s*DEBATE\)\s*/gi, "").replace(/^ESPAÇO DA CRIANÇA\s*[—–-]\s*/i, "").replace(/^BANG[ÜU]Ê ACESSÍVEL\s*\((.+)\)$/i, "$1").trim();
 }
+function parseSpecLine(line: string) {
+  const m = line.match(/^([^,]+?)(?:,\s*([A-Za-zÀ-ÿ\s/]+))?,\s*(?:(\d{4}),\s*)?(?:(\d{1,2})h(\d{2})?|(\d+)\s*(?:[’'′]|min|m\b))/i);
+  if (!m) return null;
+  const country = m[2] ? `${m[1]}, ${m[2]}`.trim() : m[1].trim();
+  const yearMatch = m[3] ? Number(m[3]) : (line.match(/\b(19\d{2}|20\d{2})\b/)?.[1] ? Number(line.match(/\b(19\d{2}|20\d{2})\b/)![1]) : null);
+  let duration: number | null = null;
+  if (m[4]) {
+    duration = Number(m[4]) * 60 + (m[5] ? Number(m[5]) : 0);
+  } else if (m[6]) {
+    duration = Number(m[6]);
+  }
+  return { country, year: yearMatch, duration };
+}
+
 export function parseFunesc(html: string, fetchedAt = new Date().toISOString(), sourceUrl = OFFICIAL_TEXT): Schedule {
   const $ = load(html);
   const content = $("#parent-fieldname-text");
@@ -82,8 +96,11 @@ export function parseFunesc(html: string, fetchedAt = new Date().toISOString(), 
       return [lines];
     });
     const lines = blocks[0] || [];
-    const spec = lines.find(l => /,\s*\d{4},\s*\d+[’'′]/.test(l));
-    const details = spec?.match(/^(.+),\s*(\d{4}),\s*(\d+)[’'′]/);
+    let details: { country: string | null; year: number | null; duration: number | null } | null = null;
+    for (const l of lines) {
+      const parsed = parseSpecLine(l);
+      if (parsed) { details = parsed; break; }
+    }
     const genreMatch = blocks.flat().map(l => {
       const m1 = l.match(/G[êe]nero:\s*([A-Za-zÀ-ÿ]+)/i);
       if (m1) return m1[1].toUpperCase();
@@ -92,8 +109,8 @@ export function parseFunesc(html: string, fetchedAt = new Date().toISOString(), 
       return null;
     }).find(Boolean) || null;
     films.push({ id: filmId, title, director: lines.find(l => /^DIREÇÃO:/i.test(l))?.replace(/^DIREÇÃO:\s*/i, "") || null,
-      year: details ? Number(details[2]) : null, duration: details ? Number(details[3]) : null,
-      country: details?.[1] || null, rating: lines.find(l => /^CLASSIFICAÇÃO INDICATIVA:/i.test(l))?.replace(/^CLASSIFICAÇÃO INDICATIVA:\s*/i, "")?.replace(/\.$/, "") || null,
+      year: details?.year || null, duration: details?.duration || null,
+      country: details?.country || null, rating: lines.find(l => /^CLASSIFICAÇÃO INDICATIVA:/i.test(l))?.replace(/^CLASSIFICAÇÃO INDICATIVA:\s*/i, "")?.replace(/\.$/, "") || null,
       synopsis: lines.find(l => l.length > 100 && !/^DIREÇÃO|^CLASSIFICAÇÃO/i.test(l)) || null,
       genre: genreMatch,
       poster: null, tmdbId: null, sourceUrl
