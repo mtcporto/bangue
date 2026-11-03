@@ -9,6 +9,13 @@ export async function GET(request: Request) {
   if (!databaseConfigured()) return Response.json({ error: 'Banco não configurado.' }, { status: 503 });
   try {
     await getDb().execute({ sql: 'DELETE FROM rate_limits WHERE expires_at < ?', args: [Date.now()] });
-    return Response.json(await importSchedule('cron'));
-  } catch { return Response.json({ error: 'Coleta falhou. A programação anterior foi preservada.' }, { status: 502 }); }
+    const result = await importSchedule('cron');
+    return Response.json(result);
+  } catch (err) {
+    console.error('cron execution failed:', err);
+    return Response.json({
+      error: 'Coleta falhou. A programação anterior foi preservada.',
+      details: err instanceof Error ? err.message : String(err)
+    }, { status: 502 });
+  }
 }
