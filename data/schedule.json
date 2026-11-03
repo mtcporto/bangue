@@ -46,9 +46,17 @@
       "rating": null,
       "synopsis": "Corinne é uma figurante que sonha em conquistar um papel de destaque no cinema. Ao se aproximar da atriz Sandrine Kiberlain, vê surgir uma oportunidade de realizar seu sonho, mas fica a dúvida: essa relação será seu caminho para o sucesso?",
       "genre": null,
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/pnyMB0Sezog/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/pnyMB0Sezog/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "pnyMB0Sezog",
+        "url": "https://www.youtube.com/watch?v=pnyMB0Sezog",
+        "title": "Ni vue, ni connue — Bande-annonce officielle",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=pnyMB0Sezog"
+      }
     },
     {
       "id": "meu-verao-na-sicilia",
@@ -82,9 +90,17 @@
       "rating": null,
       "synopsis": "Recém-divorciada, Fanny tenta se livrar das dívidas e da rotina que a aprisiona. Sua vida muda ao conhecer Anémone, uma sereia profissional que desperta nela novas possibilidades de liberdade e recomeço.",
       "genre": null,
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/AqtNwQbWJ0c/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/AqtNwQbWJ0c/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "AqtNwQbWJ0c",
+        "url": "https://www.youtube.com/watch?v=AqtNwQbWJ0c",
+        "title": "Miss Mermaid — Bande-annonce officielle",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=AqtNwQbWJ0c"
+      }
     },
     {
       "id": "vicentina-pede-desculpas",
@@ -96,9 +112,17 @@
       "rating": "12 anos",
       "synopsis": "Numa manhã ensolarada em Belo Horizonte, um ônibus lotado segue para o centro da cidade. Ao cruzar um viaduto, o veículo desvia repentinamente, sai da pista e cai na avenida abaixo. Um passageiro fica gravemente ferido, enquanto todos os outros, incluindo Wesley, o motorista, morrem. Vicentina, professora aposentada e mãe de Wesley, fica devastada com a tragédia e sem saber como seguir em frente. Ela decide procurar as famílias das vítimas e pedir desculpas.",
       "genre": "DRAMA",
-      "poster": null,
-      "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "poster": "https://i.ytimg.com/vi/6lYmMz0qvGA/hqdefault.jpg",
+      "tmdbId": 1307474,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/6lYmMz0qvGA/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "6lYmMz0qvGA",
+        "url": "https://www.youtube.com/watch?v=6lYmMz0qvGA",
+        "title": "Vicentina Pede Desculpas — Trailer Oficial",
+        "language": "pt",
+        "sourceUrl": "https://www.youtube.com/watch?v=6lYmMz0qvGA"
+      }
     },
     {
       "id": "a-casa-das-mulheres",
@@ -110,9 +134,17 @@
       "rating": null,
       "synopsis": "Na Casa das Mulheres, uma equipe acolhe mulheres vítimas de violência e as acompanha na reconstrução de suas vidas. Entre escuta, solidariedade e desafios diários, profissionais unem forças para ajudá-las a recuperar a confiança e a autonomia.",
       "genre": null,
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/-FNcqt1tN9c/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/-FNcqt1tN9c/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "-FNcqt1tN9c",
+        "url": "https://www.youtube.com/watch?v=-FNcqt1tN9c",
+        "title": "La Maison des femmes — Bande-annonce officielle",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=-FNcqt1tN9c"
+      }
     },
     {
       "id": "ecos-do-teatro-experimental-do-negro",
@@ -138,9 +170,17 @@
       "rating": null,
       "synopsis": "Quando Fred pede à ex-esposa, Marguerite, a anulação do casamento religioso para se casar novamente, os dois acabam embarcando em uma viagem a Roma com seus filhos e novos parceiros. O que parecia simples se transforma em uma aventura cheia de imprevistos para toda a família.",
       "genre": null,
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/2J6p9PbuTDU/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/2J6p9PbuTDU/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "2J6p9PbuTDU",
+        "url": "https://www.youtube.com/watch?v=2J6p9PbuTDU",
+        "title": "C'est quoi l'amour ? — Bande-annonce officielle",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=2J6p9PbuTDU"
+      }
     },
     {
       "id": "o-beijo-eletrico",
@@ -152,9 +192,17 @@
       "rating": null,
       "synopsis": "Paris, 1928. Um pintor em luto busca contato com a esposa falecida e acaba envolvido nas farsas de Suzanne, uma falsa vidente que, ao ajudá-lo a recuperar a inspiração, se apaixona por ele.",
       "genre": null,
-      "poster": null,
-      "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "poster": "https://i.ytimg.com/vi/Vh7we1gyElY/hqdefault.jpg",
+      "tmdbId": 1442669,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/Vh7we1gyElY/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "Vh7we1gyElY",
+        "url": "https://www.youtube.com/watch?v=Vh7we1gyElY",
+        "title": "La Vénus électrique — Bande-annonce officielle",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=Vh7we1gyElY"
+      }
     },
     {
       "id": "o-rei-e-o-passaro",
@@ -166,9 +214,17 @@
       "rating": null,
       "synopsis": "No reino de Takicardie, um rei tirano deseja se casar à força com uma pastora apaixonada por um limpador de chaminés. Com a ajuda de um pássaro irreverente, o casal tenta escapar do monarca e conquistar a liberdade.",
       "genre": null,
-      "poster": null,
-      "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "poster": "https://image.tmdb.org/t/p/w500/pSL75Sg1APD4OHpQs4VyFb8pIFv.jpg",
+      "tmdbId": 22504,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://image.tmdb.org/t/p/w1280/yDbfVUrb9b0Dkm1TptWtzkujXBk.jpg",
+      "trailer": {
+        "youtubeId": "4IetbP0TqEE",
+        "url": "https://www.youtube.com/watch?v=4IetbP0TqEE",
+        "title": "Le Roi et l'Oiseau — Bande-annonce officielle",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=4IetbP0TqEE"
+      }
     },
     {
       "id": "de-gaulle-a-franca-livre-parte-1",
@@ -180,9 +236,17 @@
       "rating": null,
       "synopsis": "Em junho de 1940, enquanto a França se rende à Alemanha nazista, o general Charles de Gaulle foge para Londres e decide continuar a luta pela liberdade. Com coragem e determinação, ele mobiliza resistentes e soldados para provar que a batalha ainda não terminou.",
       "genre": null,
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/RUWLWTKY-fU/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/RUWLWTKY-fU/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "RUWLWTKY-fU",
+        "url": "https://www.youtube.com/watch?v=RUWLWTKY-fU",
+        "title": "La Bataille de Gaulle — Bande-annonce officielle | Pathé",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=RUWLWTKY-fU"
+      }
     },
     {
       "id": "compostela-o-caminho-da-terapia",
@@ -194,9 +258,17 @@
       "rating": null,
       "synopsis": "Fred e Adam, um adolescente em crise, partem juntos rumo a Santiago de Compostela. Entre conflitos e descobertas, a caminhada se transforma em uma jornada de superação, capaz de revelar novas forças e criar laços inesperados.",
       "genre": null,
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/9YE0hlydkao/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/9YE0hlydkao/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "9YE0hlydkao",
+        "url": "https://www.youtube.com/watch?v=9YE0hlydkao",
+        "title": "Compostelle — Bande-annonce officielle",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=9YE0hlydkao"
+      }
     },
     {
       "id": "uma-menina-de-ouro",
@@ -208,9 +280,17 @@
       "rating": null,
       "synopsis": "Ao perceber que nunca foi admirada, Clémence, marcada pelas lembranças de uma infância caótica, conhece Paul, um empresário autoritário e difícil de impressionar. Esse encontro a leva a questionar seu próprio valor e a descobrir que pode ser muito mais do que imagina.",
       "genre": null,
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/fEFrjhCiO0A/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/fEFrjhCiO0A/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "fEFrjhCiO0A",
+        "url": "https://www.youtube.com/watch?v=fEFrjhCiO0A",
+        "title": "Une fille en or — Bande-annonce officielle",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=fEFrjhCiO0A"
+      }
     },
     {
       "id": "a-busca-de-charlie",
@@ -222,9 +302,17 @@
       "rating": null,
       "synopsis": "Ainda lidando com a morte da avó, Charlie pega a estrada com discos de vinil no porta-malas. Pelo caminho, encontros inesperados e uma praia no Mediterrâneo vão transformar sua jornada em uma descoberta sobre afeto, liberdade e recomeços.",
       "genre": null,
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/ZtXJ4jyE1Tw/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/ZtXJ4jyE1Tw/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "ZtXJ4jyE1Tw",
+        "url": "https://www.youtube.com/watch?v=ZtXJ4jyE1Tw",
+        "title": "Les Matins merveilleux — Bande-annonce officielle",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=ZtXJ4jyE1Tw"
+      }
     },
     {
       "id": "bangue-acessivel",
@@ -250,9 +338,17 @@
       "rating": null,
       "synopsis": "Marie-Lou busca transformar o cuidado em uma instituição para idosos, colocando a escuta e a dignidade no centro. Ao conhecer Mari, uma diretora de teatro japonesa que enfrenta um câncer, ela cria uma amizade que mudará sua vida e a inspirará a lutar pelo impossível.",
       "genre": null,
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/NuyQQeHdZZ0/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/NuyQQeHdZZ0/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "NuyQQeHdZZ0",
+        "url": "https://www.youtube.com/watch?v=NuyQQeHdZZ0",
+        "title": "All of a Sudden / Soudain — Bande-annonce officielle",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=NuyQQeHdZZ0"
+      }
     },
     {
       "id": "duas-pessoas-trocando-saliva-bem-vindos-a-la-comedie-francaise",
@@ -278,9 +374,17 @@
       "rating": null,
       "synopsis": "Em Paris, a jovem bailarina Anastasia ingressa na Ópera de Paris e se envolve com um pianista misterioso. Entre uma ópera amaldiçoada, acidentes inexplicáveis e revelações surpreendentes, ela vive um romance que desafia os limites entre o real e o fantástico.",
       "genre": null,
-      "poster": null,
-      "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "poster": "https://i.ytimg.com/vi/S1YuCC3kly0/hqdefault.jpg",
+      "tmdbId": 1430841,
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/S1YuCC3kly0/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "S1YuCC3kly0",
+        "url": "https://www.youtube.com/watch?v=S1YuCC3kly0",
+        "title": "Le Fantôme de l'Opéra — Bande-annonce officielle",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=S1YuCC3kly0"
+      }
     },
     {
       "id": "da-gaulle-a-franca-livre-parte-2",
@@ -320,9 +424,17 @@
       "rating": null,
       "synopsis": "Vincent Munier leva o pai e o filho às florestas dos Vosges, em uma jornada pela vida selvagem. Entre cervos, raposas e linces, três gerações compartilham o conhecimento e a fascinação pela natureza, em busca de um animal lendário: o tetraz-grande.",
       "genre": null,
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/2W9KOuEOwBs/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/2W9KOuEOwBs/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "2W9KOuEOwBs",
+        "url": "https://www.youtube.com/watch?v=2W9KOuEOwBs",
+        "title": "Le Chant des forêts — Bande-annonce officielle",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=2W9KOuEOwBs"
+      }
     },
     {
       "id": "josephine-fragmentos-de-um-crime",
@@ -334,9 +446,17 @@
       "rating": "16 anos",
       "synopsis": "Depois de testemunhar acidentalmente um crime violento, Josephine, uma menina de 8 anos, procura formas de se sentir segura, enquanto os adultos ao seu redor são incapazes de consolá-la.",
       "genre": "DRAMA",
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/Uc_OuA7hVv0/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/Uc_OuA7hVv0/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "Uc_OuA7hVv0",
+        "url": "https://www.youtube.com/watch?v=Uc_OuA7hVv0",
+        "title": "Josephine — Official Trailer",
+        "language": "en",
+        "sourceUrl": "https://www.youtube.com/watch?v=Uc_OuA7hVv0"
+      }
     },
     {
       "id": "bem-vindos-a-la-comedie-francaise",
@@ -348,9 +468,17 @@
       "rating": null,
       "synopsis": "A poucas horas de sua estreia na Comédie-Française, Nina enfrenta atrasos, falhas técnicas e conflitos que ameaçam a apresentação. Em uma corrida contra o relógio, ela precisa superar os imprevistos e fazer o espetáculo acontecer.",
       "genre": null,
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/jGNJ105YuxA/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/jGNJ105YuxA/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "jGNJ105YuxA",
+        "url": "https://www.youtube.com/watch?v=jGNJ105YuxA",
+        "title": "Bienvenue à la Comédie-Française — Bande-annonce",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=jGNJ105YuxA"
+      }
     },
     {
       "id": "males",
@@ -362,9 +490,17 @@
       "rating": "16 anos",
       "synopsis": "Durante seu casamento, dois jovens muçulmanos são arrancados de sua terra natal na África e escravizados no Brasil. Separados pelo destino cruel, ambos lutam para sobreviver e reencontrar-se, enquanto se veem envolvidos na maior insurreição de escravizados da história do Brasil: a Revolta dos Malês.",
       "genre": "DRAMA",
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/Ih8axiEBvAs/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/Ih8axiEBvAs/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "Ih8axiEBvAs",
+        "url": "https://www.youtube.com/watch?v=Ih8axiEBvAs",
+        "title": "Malês | Trailer Oficial — Imovision",
+        "language": "pt",
+        "sourceUrl": "https://www.youtube.com/watch?v=Ih8axiEBvAs"
+      }
     },
     {
       "id": "moliere-cyrano-e-o-pequeno-rei",
@@ -376,9 +512,17 @@
       "rating": null,
       "synopsis": "Em 1651, durante a Fronda, o jovem Luís XIV é escondido por Cyrano de Bergerac em uma companhia teatral. Longe da corte, ele descobre a arte, o amor e os desafios da vida, experiências que ajudarão a moldar o futuro Rei Sol.",
       "genre": null,
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/o8v7OAehmZQ/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/o8v7OAehmZQ/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "o8v7OAehmZQ",
+        "url": "https://www.youtube.com/watch?v=o8v7OAehmZQ",
+        "title": "Les Caprices de l'enfant roi — Bande-annonce officielle",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=o8v7OAehmZQ"
+      }
     },
     {
       "id": "jim-queen",
@@ -404,9 +548,17 @@
       "rating": null,
       "synopsis": "Após o desaparecimento misterioso de Dario na infância, dois irmãos se reencontram vinte anos depois, com a morte da mãe. Quando um antigo sequestrador reaparece, eles precisam confrontar os traumas do passado e escolher entre a vingança e o perdão.",
       "genre": null,
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/AESEKny5gjs/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/AESEKny5gjs/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "AESEKny5gjs",
+        "url": "https://www.youtube.com/watch?v=AESEKny5gjs",
+        "title": "Sans pitié — Bande-annonce officielle",
+        "language": "fr",
+        "sourceUrl": "https://www.youtube.com/watch?v=AESEKny5gjs"
+      }
     },
     {
       "id": "yellow-cake",
@@ -418,9 +570,17 @@
       "rating": "14 anos",
       "synopsis": "Na cidade de Picuí, no sertão da Paraíba, um grupo de cientistas tenta erradicar o mortal mosquito Aedes aegypti – transmissor da dengue – por meio de um experimento secreto intitulado Yellow Cake. Utilizando o urânio extraído da região, o projeto pretende esterilizar os mosquitos e assim conter a disseminação da doença.",
       "genre": "FICÇÃO",
-      "poster": null,
+      "poster": "https://i.ytimg.com/vi/eLTqRWtAhKw/hqdefault.jpg",
       "tmdbId": null,
-      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto"
+      "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
+      "backdrop": "https://i.ytimg.com/vi/eLTqRWtAhKw/maxresdefault.jpg",
+      "trailer": {
+        "youtubeId": "eLTqRWtAhKw",
+        "url": "https://www.youtube.com/watch?v=eLTqRWtAhKw",
+        "title": "Yellow Cake — Trailer Oficial | Olhar Filmes",
+        "language": "pt",
+        "sourceUrl": "https://www.youtube.com/watch?v=eLTqRWtAhKw"
+      }
     },
     {
       "id": "victor-como-hugo",
@@ -562,7 +722,7 @@
       },
       "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
       "sourceText": "17h – Minha Vida de Sereia",
-      "needsReview": true
+      "needsReview": false
     },
     {
       "id": "bangue-2026-11-03-1850",
@@ -1486,7 +1646,7 @@
       },
       "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
       "sourceText": "18h10 – Bem-Vindos a La Comédie Française",
-      "needsReview": true
+      "needsReview": false
     },
     {
       "id": "bangue-2026-11-19-1940",
@@ -1948,7 +2108,7 @@
       },
       "sourceUrl": "https://funesc.pb.gov.br/conheca-a-funesc/cine-bangue-programacao/programacao-cine-bangue-texto",
       "sourceText": "18h10 – Bem-Vindos a La Comédie Française",
-      "needsReview": true
+      "needsReview": false
     },
     {
       "id": "bangue-2026-11-27-1950",
@@ -2113,7 +2273,8 @@
       "sessionIds": [
         "bangue-2026-11-03-1700"
       ],
-      "resolved": false
+      "resolved": true,
+      "resolution": "Grade diária confirmada. Sessão de 04/11 19h50 pertence a Meu Verão na Sicília conforme grade oficial."
     },
     {
       "id": "611a63d25cfa7b7d",
@@ -2123,7 +2284,8 @@
         "bangue-2026-11-19-1810",
         "bangue-2026-11-27-1810"
       ],
-      "resolved": false
+      "resolved": true,
+      "resolution": "Grade diária confirmada. Horário conflitante na sinopse descartado."
     }
   ]
 }

@@ -15,7 +15,16 @@ export async function readSchedule(period?: string): Promise<StoredSchedule> {
       });
       if (result.rows[0]) {
         let schedule = JSON.parse(String(result.rows[0].payload)) as Schedule;
-        if (seed.period === targetPeriod && seed.films.some(f => (f.poster || f.backdrop || f.trailer) && !schedule.films.find(sf => sf.id === f.id)?.poster)) {
+        const needsSync = seed.period === targetPeriod && (
+          seed.sourceHash !== schedule.sourceHash ||
+          JSON.stringify(seed.issues) !== JSON.stringify(schedule.issues) ||
+          seed.films.some(f =>
+            (f.poster && !schedule.films.find(sf => sf.id === f.id)?.poster) ||
+            (f.backdrop && !schedule.films.find(sf => sf.id === f.id)?.backdrop) ||
+            (f.trailer && !schedule.films.find(sf => sf.id === f.id)?.trailer)
+          )
+        );
+        if (needsSync) {
           try {
             await persistSchedule(seed as unknown as Schedule, '', 'seed-sync');
             schedule = structuredClone(seed) as unknown as Schedule;
